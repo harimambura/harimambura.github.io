@@ -1,7 +1,59 @@
-body {
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaBold"; */
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot");
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"),
+    url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaItalic"; */
+@font-face {
+    font-family: "HelveticaItalic";
+    src: url("../fonts/HelveticaItalic/HelveticaItalic.eot");
+    src: url("../fonts/HelveticaItalic/HelveticaItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaItalic/HelveticaItalic.woff") format("woff"),
+    url("../fonts/HelveticaItalic/HelveticaItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaLight"; */
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot");
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+    url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaMedium"; */
+@font-face {
+    font-family: "HelveticaMedium";
+    src: url("../fonts/HelveticaMedium/HelveticaMedium.eot");
+    src: url("../fonts/HelveticaMedium/HelveticaMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaMedium/HelveticaMedium.woff") format("woff"),
+    url("../fonts/HelveticaMedium/HelveticaMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
-	font: 16px Arial;
+body {
+	background-image: repeating-linear-gradient(-45deg, rgba(162,135,255,.2), rgba(162,135,255,.2) 25px, rgba(255,248,45,.3) 25px, rgba(255,248,45,.3) 50px);
+	font: 16px HelveticaMedium, Arial;
 	color:#565656;
+	text-shadow:  0 1px 0 white;
 }
 
 div {
@@ -26,8 +78,14 @@ a {
 	padding:30px 5px 0 5px;
 	margin-left: 1px;
 	float:right;
+	transition: all .3s;
+	opacity:.7;
+	border-radius:6px;
 }
 
+.lnk_txt {
+
+}
 
 a, a:visited{
 	color:#565656;
@@ -37,6 +95,7 @@ a, a:visited{
 a:hover {
 	color:#072F1A;
 	text-decoration: underline;
+	background-color:#FF2727;
 }
 
 .header {
@@ -47,6 +106,7 @@ a:hover {
 }
 
 .content {
+	min-height: 600px;
 	width:960px;
 	margin:0 auto;
 	margin-bottom: 20px;
@@ -88,6 +148,7 @@ h2 {
 	padding:10px 5px 10px 5px;
 	word-wrap: break-word;
 	text-indent: 20px;
+	text-shadow:none;
 	text-align: justify;
 }
 
@@ -99,11 +160,17 @@ h2 {
 
 }
 
+.post {
+
+}
+
 .footer {
 	height: 100px;
 	margin: 0px;
 	text-align:center;
 	text-decoration: underline;
+	font-weight: normal;
+	padding-top:30px;
 }
 
 input {
@@ -118,6 +185,11 @@ input:last-child {
 
 em {
 	color: #FF0000;
+}
+
+.copy {
+	display:block;
+	margin-top:30px;
 }
 
 .clearfix {
