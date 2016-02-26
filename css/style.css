@@ -96,6 +96,7 @@ a:hover {
 	color:#072F1A;
 	text-decoration: underline;
 	background-color:#FF2727;
+	text-shadow: none;
 }
 
 .header {
