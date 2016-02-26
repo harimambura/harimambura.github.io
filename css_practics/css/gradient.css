@@ -1,0 +1,45 @@
+.container {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 40px;
+    background: #999;
+    
+    border-radius: 5px;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+    overflow: hidden;
+    position: relative;
+    
+    cursor: pointer;
+    /*градиенты. Указываются в свойствах background или background-image*/
+  /*  background:  linear-gradient(#333, #bbb); /* линейный градиент, минимум 2 параметра, это 2 цвета*/
+  /*  background:  linear-gradient(45deg, #333, #bbb); /*первый параметр - угол наклона(можно right, left etc.; можно например 20% 10%)*/
+    /*background:  linear-gradient(45deg, #333 30%, #bbb 40%); /*проценты в указании цветов служат для определения резкости градиента*/ 
+    
+  /*  background:  radial-gradient(21% 97%, #666 20%, rgba( 88, 191, 88, 0.891 ) 203%,#333, #bbb ); /*радиальный градиент, по аналогии с линейным*/
+    /*в градиентах может быть любое количество точек с цветами (цветов), перечисляются через запятую*/
+    
+    
+}
+
+.container::after {
+    content: '.';
+    width: 400px;
+    height: 300px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    transition:  opacity .3s;
+    
+    background:  radial-gradient(transparent, rgba(0,0,0,.7));
+    
+    background: repeating-linear-gradient(-45deg, rgba(0,0,0,.3) 4px, rgba(0,0,0,.3) 8px, transparent 8px, transparent 12px), repeating-linear-gradient(45deg, rgba(0,0,0,.3) 4px, rgba(0,0,0,.3) 8px, transparent 8px, transparent 12px);
+    
+    /*градиентов у объекта может быть несколько. с помощью repeating можно делать повторяющийся градиент, как пример выше, с помощью этого можно рисовать текстуры*/
+}
+
+.container:hover::after {
+    opacity: 0;
+}

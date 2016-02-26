@@ -1,0 +1,58 @@
+
+p {
+    padding: 30px;
+    background-color:#0bca01 ;
+}
+
+img {
+    float: left;
+}
+
+.text1 {
+    float: left;
+    width: 345px;
+}
+.container {
+    background-color: cornflowerblue;
+    border: 1px solid #050905;
+}
+.text2 {
+   clear: both;
+}
+
+/*
+.clear {
+    clear: both;
+}
+*/
+
+.container::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+/*
+Псевдоклассы:
+для ссылок: (:hover), (:active), (:focus)
+
+для всех элементов: (::before), (::after)
+вставляют элемент до или после блока, к которому приписаны, обязательно свойство content.
+Пример выше называется clearfix, отменяет float, вместо конструкции div со свойством clear
+*/
+ul {
+    font-family: Arial;
+    color: #333;
+    
+    list-style-type: circle;
+    list-style-type: decimal;
+    list-style-type: disc;
+    list-style-type: square;
+    
+    list-style-position: inside;
+    list-style-position: outside;
+    
+    list-style-image: url(../images/yes.png); 
+    
+    list-style: disc inside;
+}

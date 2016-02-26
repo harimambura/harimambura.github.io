@@ -1,0 +1,184 @@
+.left-menu {
+    float: left;
+    height: 640px;
+    border: 2px solid #333;
+    margin-left: 5px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.content {
+    width:700px;
+    margin-left: 305px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.content::after {
+    content: '.';
+    rgba(0,0,0,0);
+    clear: both;
+}
+.container {
+    background: #ef0909;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    text-shadow: 0 1px 0 #eee; /*1 - отступ по горизонтали, 2 - по вертиали, 3 - размытие, 4 - цвет тени*/
+    
+    border: 2px solid #36ca01;
+    border-radius: 100px;
+
+    text-align: center;
+    line-height: 100px;
+    
+    box-shadow: 8px 8px 10px #0122ca;
+}
+
+a {
+    color: #040202;
+    text-decoration: none;
+}
+
+.links li {
+    font: 1.2em Tahoma;
+    width: 265px;
+    background: #666 no-repeat;
+    opacity: .85;
+    display: block;
+    height: 60px;
+    margin: 2px;
+    text-align: center; 
+    line-height: 60px;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+.links li:hover {
+    background: #c53e3e;
+}
+
+.links {
+    margin: 10px;
+    width: 269px;
+    height: 61px;
+    overflow: hidden;
+    transition: height .2s;
+}
+
+.links:hover {
+    height: 620px;
+    
+}
+
+body {
+    font: 1em Arial;
+    margin: 0;
+    background-image: url(http://www.fencescreen.com/Configure/Content/Uploads/ImageCache/380x216-AutoCrop/PrePrinted/BlockWall3_Sample.jpg);
+    background-attachment: fixed; /*закрепляет изображение относительно окна браузера (фон не двигается при прокрутке)*/
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-top: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    display: inline-block;
+}
+.bg-box {
+    width: 627px;
+    height: 301px;
+    background-color: dimgrey;
+    background-image: url(https://lh5.ggpht.com/qBByU06pS1xMDga67X9WC7ATyFpXUBTqhhgn4TYNwE1SLafdGE0saAIagu1Vsngh2o8=w300), url(http://www.redicedesigns.com/blog/wp-content/uploads/2010/03/dark_grey_repeat.jpg); 
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size:150px, 130px ;
+/*    можно указывать несколько картинок для фона, чтобы указать каждой картинке отдельные свойства, надо писать их через запятую в том же порядке, в каком вписаны картинки на фон, это для всех свойств фона*/
+}
+
+.list li {
+    background: url(../images/sprite.png) no-repeat;
+    display: inline-block;
+    width: 81px;
+    height: 31px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list .item1 {
+    background-position: -0 -0;
+}
+
+.list .item1:hover {
+    background-position: -0 -32px;
+}
+
+.list .item1:active {
+    background-position: -0 -64px;
+}
+
+.list .item2 {
+    background-position: -80px -0;
+}
+
+.list .item2:hover {
+    background-position: -80px -32px;
+}
+
+.list .item2:active {
+    background-position: -80px -64px;
+}
+
+.list .item3 {
+    background-position: -159px -64px;
+}
+
+.list .item3:hover {
+    background-position: -159px -96px;
+}
+
+.list .item3:active {
+    background-position: -159px -128px;
+}
+
+.list .item4 {
+    background-position: -159px -96px;
+}
+
+.list .item4:hover {
+    background-position: -159px -128px;
+}
+
+.list .item4:active {
+    background-position: -159px -160px;
+}
+
+.list .item5 {
+    background-position: -159px -128px;
+}
+
+.list .item5:hover {
+    background-position: -159px -160px;
+}
+
+.list .item5:active {
+    background-position: 0 0;
+}
+

@@ -1,0 +1,52 @@
+body {
+    background:  url(http://subtlepatterns.com/patterns/light_noise_diagonal.png);
+    font: 1em 'PT Sans', Tahoma, Arial;
+}
+
+#wrapper {
+    margin: 80px;
+    perspective: 900px; /*необходима для 3Д вида, подбирать вручную*/
+}
+
+#cube {
+    width: 300px;
+    height: 300px;
+    position: relative; 
+     transform-origin:  50% 50% -150px;  /*позиционирует точку, относительно которой будет проходить трансформация*/
+    transform-style: preserve-3d;  /*задает 3Д изображение (объемные фигуры), все трансформы в контейнере будут меняться одновременно*/
+}
+
+.side {
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.3);
+    background: radial-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+    position: absolute;
+    border:  10px solid #fff;
+    border-radius: 10px;
+    font-size: 5em;
+    color: #fff;
+    line-height: 300px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    transform-origin:  50% 50% -150px; /*позиционирует точку, относительно которой будет проходить трансформация*/
+    
+    backface-visibility: hidden; /*выставляет видимость элементов, повернутых к нам тыльной стороной*/
+}
+
+#side2 {
+    transform: rotateY(90deg);
+}
+#side3 {
+    transform: rotateY(-90deg);
+}
+#side4 {
+    transform: rotateX(90deg);
+}
+#side5 {
+    transform: rotateX(-90deg);
+}
+#side6 {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,14 @@
+
+.l1 {
+    display: inline-block;
+    height: 55px;
+    width: 65px;
+    background: repeating-linear-gradient(30deg, #ff33ff 0px, transparent 14px, #f6d12c 19px, transparent 27px );
+    margin: 5px;
+    
+    font: 1.2em/1.5 Arial, Tahoma;
+    text-align: center;
+    line-height: 54px;
+    
+    text-transform: uppercase;
+}

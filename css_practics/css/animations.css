@@ -1,0 +1,88 @@
+body {
+    background:  url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/sativa.png);
+    font: 1em 'PT Sans', Tahoma, Arial;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8), rgba(0,0,0,0.6));
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: 50px;
+    opacity: .9;
+    
+    font-size: 20px;
+    color: #cbcbcb;
+    text-align: center;
+    line-height: 95px;
+    
+/*
+    animation-name: spin; /*название анимации*/
+    /*animation-duration: 1.7s; /*длительность*/
+    /*animation-timing-function: cubic-bezier(0, 0, 0, 0); /*тип анимации (linear, ease-in-out etc. или cubic-bezier по координатам)  */
+  /* animation-iteration-count: infinite;
+  /*  animation-direction: reverse;
+*/
+    
+    /*сокращенно - animation*/
+    animation: spin 1.7s linear 1s infinite alternate; /*1 - имя анимации 2- длительность анимации 3 - тип анимации 4 - задержка перед началом 5 - количество повторение 6 - направление*/
+}
+
+.square:hover {
+    animation-play-state: paused;     /*приостановка анимации*/
+}
+
+/*
+@keyframes spin{
+    0% {
+        
+    }
+    100% {
+        
+    }
+}*/
+
+@keyframes spin{  /*так задается анимация, утанавливаются ключевые кадры с указанием изменений*/
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/********ПРАКТИКА********/
+
+.container {
+    width: 200px;
+    height: 30px;
+    border: 3px solid #fff;
+    background: #999;
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 40px;
+}
+
+.bar {
+    height: 30px;
+    height: 400px;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.9) 0, rgba(255,255,255,.9) 5px, transparent 5px, transparent 10px);
+    
+    animation: slide 3s linear infinite ;
+}
+
+@keyframes slide {
+    from {
+        margin-left: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        margin-left: -100%;
+    }
+}
