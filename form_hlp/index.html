@@ -3,54 +3,169 @@
 <head>
 	<meta charset="UTF-8">
 	<title>form help page</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 	<div class="header">
 		<h1>Справка по form и input</h1>
+		<ul class="link_list">
+				<li class="link submenu">
+					<ul>
+						<li ><a class="menu_lnk" href="#">Моя справка</a></li>
+						<li ><a class="menu_lnk" href="form_hlp/">Инфа по FORM и INPUT</a>
+						</li>
+						<li ><a class="menu_lnk" href="#">Ссылка</a></li>
+						<li ><a class="menu_lnk" href="#">Ссылка</a></li>
+						<li ><a class="menu_lnk" href="#">Ссылка</a></li>
+						<li ><a class="menu_lnk" href="#">Ссылка</a></li>
+					</ul>
+				</li>
+				<li class="link"></li>
+				<li class="link"><a class="menu_lnk" href="css_practics/">Старая CSS практика</a></li>
+				<li class="link"><a class="menu_lnk" href="../">Домой</a></li>
+			</ul>
+		<div class="clearfix"></div>
 	</div>
 	<div class="content">
 		<div class="table">
-		<h2>Текстовые input'ы</h2>
+		<h2>Форма</h2>
 			<div class="row">
 				<div class="block frm_block">
-					<form action="_top" method="POST" novalidate autocomplete="on">
-						<input type="text"><br>
-						<input type="find"><br>
-						<input type="phone"><br>
-						<input type="email"><br>
-						<input type="number" maxlength=5><br>
-						<input type="time"><br>
+				<em>&lt;form action=&quot;&quot; method=&quot;POST&quot; novalidate autocomplete=&quot;on&quot; target=&quot;_top&quot; enctype=&quot;application/x-www-form-urlencoded&quot;&gt;
+							&lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;&quot;&gt;
+							&lt;input type=&quot;button&quot; value=&quot;Кнопка&quot;&gt; &lt;br&gt;
+							&lt;input type=&quot;submit&quot;&gt;
+					&lt;/form&gt;</em> <hr>
+					<form action="" method="POST" autocomplete="on" target="_top" enctype="application/x-www-form-urlencoded">
+							<input type="text" name="" id="" required> <br>
+							<input type="email" name="" id="" required> <br>
+							<input type="button" value="Кнопка">
+							<input type="submit">
 					</form>
 				</div>
 				<div class="block txt_block">
 					<span class="description">
-						Описание пареметров <strong>form</strong>: <strong>action</strong> - указывает, на какую страницу будут отправлены данные, <strong>novalidate</strong> - значит, что HTML5-проверка правильности введенных данных произведена не будет, <strong>autocomplete</strong> - значит, что при обновлении страницы input'ы будут заполнены данными, введенными ранее. Значения <em>on</em> или <em>off</em>.<br>
+						Описание пареметров <strong>form</strong>: <strong>action</strong> - указывает, на какую страницу будут отправлены данные, <strong>target</strong> - куда будет выведен результат отправки данных (можно указать фрейм), <strong>novalidate</strong> - значит, что HTML5-проверка правильности введенных данных произведена не будет, <strong>autocomplete</strong> - значит, что при обновлении страницы input'ы будут заполнены данными, введенными ранее. Значения <em>on</em> или <em>off</em>.<br>
 						<strong>enctype</strong> - указывает тип кодирования, значения: <em>application/x-www-form-urlencoded</em> - будет заменять русские буквы на хекс значения, а пробелы на +; <em>multipart/form-data</em> - для того, чтобы отправить файлы (не будет кодирования данных)
 					</span>
 				</div>
 			</div>
-			<h2>ОЛОЛОЛОЛО</h2>
+		<h2>Текстовые input'ы</h2>
 			<div class="row">
 				<div class="block frm_block">
-					<form action="_top" method="POST" novalidate autocomplete="on">
-						<input type="text"><br>
-						<input type="find"><br>
-						<input type="phone"><br>
-						<input type="email"><br>
-						<input type="number" maxlength=5><br>
-						<input type="time"><br>
+					<form action="" method="POST" autocomplete="on" target="_top">
+						Текстовое поле: <em>(&lt;input type=&quot;text&quot;&gt;)</em> <input type="text"><br>
+						Поле пароля: <em>(&lt;input type=&quot;password&quot;&gt;) </em><input type="password"> <br>
+						Поле email: <em>(&lt;input type=&quot;email&quot;&gt;)</em> <input type="email"><br>
+						Поле телефона: <em>(&lt;input type=&quot;tel&quot;&gt;)</em> <input type="tel"><br>
+						Поле поиска: <em>(&lt;input type=&quot;search&quot;&gt;)</em> <input type="search"><br>	
 					</form>
 				</div>
 				<div class="block txt_block">
 					<span class="description">
-						Описание пареметров <strong>form</strong>: <strong>action</strong> - указывает, на какую страницу будут отправлены данные, <strong>novalidate</strong> - значит, что HTML5-проверка правильности введенных данных произведена не будет, <strong>autocomplete</strong> - значит, что при обновлении страницы input'ы будут заполнены данными, введенными ранее. Значения <em>on</em> или <em>off</em>.<br>
-						<strong>enctype</strong> - указывает тип кодирования, значения: <em>application/x-www-form-urlencoded</em> - будет заменять русские буквы на хекс значения, а пробелы на +; <em>multipart/form-data</em> - для того, чтобы отправить файлы (не будет кодирования данных)
+						Каждое предназначено для сових нужд, в каждое вводится текст, поле пароля скрывает введенные символы. К каждому полю применим параметр <strong>maxlength</strong>, в котором указывается, сколько символов можно ввести. Каждому текстовому полю можно задать атрибут <strong>autocomplete</strong> по аналогии с формой. Атрибут <strong>placeholder</strong> задает текст по умолчанию в поле, при нажатии\вводе текста значение по умолчанию пропадает(<em>placeholder="write here..."</em>). Атрибут <strong>	required</strong> указывает, что поле обязательно для заполнения, параметров не имеет. Если в форме есть <strong>novalidate</strong>, то это атрибут не работает. Атрибут <strong>readonly</strong> делает инпут только для чтения. <strong>size</strong> устанавливает размер. <strong>spellcheck</strong> - проверка орфографии введенного текста, принимает значения <em>true/false/default</em>. <strong>pattern</strong> - для установки шаблона вводимого текста, <em>?</em>. Так же атрибуты <strong>id</strong> и <strong>name</strong>, по имени будут отправляться данные на сервер. <strong>autofocus</strong> указывает, что при загрузке страцицы фокус будет на данном инпуте, <strong>tabindex</strong> - порядок табуляции, значения - порядковые номера.
+					</span>
+				</div>
+			</div>
+			<h2>Инпуты без ввода текста</h2>
+			<div class="row">
+				<div class="block frm_block">
+					<form action="" method="POST" novalidate autocomplete="on">
+						Чек-бокс: <em>(&lt;input type=&quot;checkbox&quot;&gt;)</em> <input type="checkbox"> <br>
+						Цвет: <em>(&lt;input type=&quot;color&quot;&gt;)</em> <input type="color"> <br>
+						Файл: <em>(&lt;input type=&quot;file&quot;&gt;)</em> <input type="file" name="" id=""> <br>
+						Спрятанное поле: <em>(&lt;input type=&quot;hidden&quot;&gt;)</em> <input type="hidden"> <br>
+						Числовое поле: <em>(&lt;input type=&quot;number&quot;&gt;)</em> <input type="number"> <br>
+						Радио-кнопка: <em>(&lt;input type=&quot;radio&quot; name=&quot;rb1&quot;&gt;)</em> <input type="radio" name="rb1"> <br>
+						Радио-кнопка: <em>(&lt;input type=&quot;radio&quot; name=&quot;rb1&quot;&gt;)</em> <input type="radio" name="rb1"> <br>
+						Радио-кнопка: <em>(&lt;input type=&quot;radio&quot; name=&quot;rb1&quot;&gt;)</em> <input type="radio" name="rb1"> <br>
+						Дата без времени: <em>(&lt;input type=&quot;date&quot;&gt;)</em> <input type="date"> <br>
+						Дата со временем: <em>(&lt;input type=&quot;datetime&quot;&gt;)</em> <input type="datetime"> <br>
+						Контроль ввода даты: <em>(&lt;input type=&quot;datetime-local&quot;&gt;)</em> <input type="datetime-local"> <br>
+						Месяц: <em>(&lt;input type=&quot;month&quot;&gt;)</em> <input type="month"> <br>
+						Неделя: <em>(&lt;input type=&quot;week&quot;&gt;)</em> <input type="week"> <br>
+						Время: <em>(&lt;input type=&quot;time&quot;&gt;)</em> <input type="time"> <br>
+						Диапазон: <em>(&lt;input type=&quot;range&quot;&gt;)</em> <input type="range"> <br>
+						Прогресс-бар: <em>&lt;progress value=&quot;70&quot; max=&quot;100&quot;&gt;70 %&lt;/progress&gt;</em><progress value="70" max="100">70 %</progress> <br>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter">Meter: </a><em>&lt;meter min=&quot;200&quot; max=&quot;500&quot; value=&quot;350&quot;&gt;&lt;/meter&gt;</em><meter min="200" max="500" value="460"></meter>, <em>&lt;meter low=&quot;69&quot; high=&quot;80&quot; max=&quot;100&quot; value=&quot;84&quot;&gt;&lt;/meter&gt;</em><meter low="69" high="80" max="100" value="84"></meter>
+					</form>
+				</div>
+				<div class="block txt_block">
+					<span class="description">
+						Атрибут <strong>name</strong> у инпутов обязателен, для отправки данных. Для того, чтобы сделать группу радио-кнопок, необходимо задать им одинаковый атрибут <strong>name</strong> (как в примере). Атрибут <strong>value</strong> должен содержать значение, которое будет отправлено на сервер. Атрибут <strong>name</strong> у инпутов обязателен, для отправки данных. Для того, чтобы сделать группу радио-кнопок, необходимо задать им одинаковый атрибут <strong>name</strong> (как в примере). Атрибут <strong>value</strong> должен содержать значение, которое будет отправлено на сервер. 
+						<hr>
+						Инпут диапазон: имеет атрибуты <strong>min</strong> и <strong>max</strong>, которые задают минимальное и максимальное значение, так же <strong>step</strong> - указывает шаг.
+						<hr>
+						Инпут выбора файлов: имеет артибут <strong>accept</strong>, указывающий, какой тип файлов выбирать, значением является один или несколько <a href="https://webref.ru/html/value/mime" target="_blank" rel="nofollow">MIME-типов</a>, перечилсенных через запятую, либо значения <em>audio/*</em>, <em>video/*</em>, <em>image/*</em>. Атрибут <strong>multiple</strong> - указывает, что можно выбрать несколько файлов, значений не имеет.
+						<hr>
+						Meter: при заданных артибутах <strong>low</strong> и <strong>high</strong> меняет цвет в пределах диапазона, заданного этими атрибутами, если ближе к low - зеленый, ближе к high - желтый, если больше - красный.
+					</span>
+				</div>
+			</div>
+			<h2>Инпуты кнопки</h2>
+			<div class="row">
+				<div class="block frm_block">
+					<form action="" method="POST" novalidate autocomplete="on">
+						Просто кнопка: <em>(&lt;input type=&quot;button&quot;&gt;)</em> <input type="button"> <br>
+						Графическая кнока отправить: <em>(&lt;input type=&quot;image&quot;&gt;)</em> <input type="image"> <br>
+						Кнопка очистки формы: <em>(&lt;input type=&quot;reset&quot;&gt;)</em> <input type="reset"> <br>
+						Кнопка оптравки формы: <em>(&lt;input type=&quot;submit&quot;&gt;)</em> <input type="submit"> <br>
+					</form>
+				</div>
+				<div class="block txt_block">
+					<span class="description">
+						Кнопка <strong>button</strong> используется в JS, никаких действий по умолчанию не выполняет, для работы необходимо задать <strong>name</strong> , для установки текста на кнопку используется параметр <strong>value</strong>. На графическую кнопку пожно установить свое изображение с помощью параметра <strong>src</strong>, <strong>width</strong> и <strong>height</strong> установят размер изображения, <strong>alt</strong> - указать альтернативный текст.
+					</span>
+				</div>
+			</div>
+			<h2>Остальные элементы ввода</h2>
+			<div class="row">
+				<div class="block frm_block">
+					<form action="" method="POST" novalidate autocomplete="on">
+						Дата-лист: <input type="text" list="opt">
+						<datalist id="opt">
+							<option value="раз">
+							<option value="два">
+							<option value="три">
+						</datalist> <br>
+						<i>code: </i> <em>&lt;input type=&quot;text&quot; list=&quot;opt&quot;&gt;&lt;datalist id=&quot;opt&quot;&gt;&lt;option value=&quot;раз&quot;&gt;&lt;option value=&quot;два&quot;&gt;&lt;option value=&quot;три&quot;&gt;&lt;/datalist&gt;</em><hr>
+						Филдсет: <fieldset>
+						<legend>Логин:</legend>
+							<input type="text">
+							<input type="password">
+							<input type="submit">
+						</fieldset><br>
+						<i>code: </i><em>&lt;fieldset&gt;&lt;legend&gt;Логин:&lt;/legend&gt;&lt;input type=&quot;text&quot;&gt;&lt;input type=&quot;password&quot;&gt;&lt;input type=&quot;submit&quot;&gt;&lt;/fieldset&gt;</em><hr>
+						Селект: <select>
+							<option value="0" disabled selected>Не выбрано</option>
+							<option value="1">Одын</option>
+							<option value="2">Дува</option>
+							<option value="3">Тры</option>
+						</select><br>
+						<i>code: </i><em>&lt;select&gt;&lt;option value=&quot;0&quot; disabled selected&gt;Не выбрано&lt;/option&gt;&lt;option value=&quot;1&quot;&gt;Одын&lt;/option&gt;&lt;option value=&quot;2&quot;&gt;Дува&lt;/option&gt;&lt;option value=&quot;3&quot;&gt;Тры&lt;/option&gt;&lt;/select&gt;</em><hr>
+						Textarea: <textarea name="nm" id="" cols="70" rows="4" wrap="hard"></textarea><br>
+						<i>code: </i><em>&lt;textarea name=&quot;nm&quot; id=&quot;&quot; cols=&quot;70&quot; rows=&quot;4&quot; wrap=&quot;hard&quot;&gt;&lt;/textarea&gt;</em>
+					</form>
+				</div>
+				<div class="block txt_block">
+					<span class="description">
+						Дата-лист: применяется к обычному текстовому инпуту, содержит в себе некоторый список значений, которые предлагаются при вводе текста в инпут. Задается при помощи указания значения <strong>id</strong> атрибута дата-листа в качестве параметра атрибута <strong>list</strong> у инпута. <hr>
+						Филдсет: делает обрамление вокруг содержимого, можно использовать для группирования инпутов, да и любого другого контента, элемент <strong>legend</strong> задает заголовок у этого обрамления (см. код примера). Атрибут <strong>disabled</strong> запрещает использование элементов внутри филдсета. <hr>
+						Селект: комбобокс, значения задаются через <strong>option</strong>, опции можно указать атрибут <strong>disabled</strong>, тогда это значение будет недоступным, атрибут <strong>selected</strong> установит значение по умолчанию. Значения на сервер передаются по <strong>name</strong> селекта. <hr>
+						Textarea: мультистрочная, атрибут <strong>wrap</strong> отвечатет за перенос строк, значение <em>soft</em> значит, что переносы, отображаемые в инпуте, не будут отправлены на сервер, данные уйдут одной строкой, <em>hard</em> значит, что переносы сохранятся, при этом обязателен атрибут <strong>cols</strong>, значение <strong>off</strong> выключает переносы, текст будет вводиться одной строкой. Атрибут <strong>disabled</strong> отключает поле.
 					</span>
 				</div>
 			</div>
 		</div>
+		<script>
+			function load(){
+				document.getElementById("youtube").src="https://www.youtube.com/embed/Y_dsckWhclE?list=PLwSSV-_L9szsyAwvl4Q-oTM1HdNBZFSF-";
+			}
+		</script>
+		<button onClick="load()">Load video</button><br>
+		<iframe width="560" height="315" src="" frameborder="0" allowfullscreen id="youtube"></iframe>
+		
 	</div>
 	<div class="footer">
 		<span class="copy">Copyright &copy;</span>
