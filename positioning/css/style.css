@@ -27,7 +27,7 @@ header {
 	width: 200px;
 	height: 200px;
 	margin-top: 29px;
-	border-radius:40%;
+	position:relative;
 }
 
 .sprite {
