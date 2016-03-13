@@ -112,6 +112,10 @@ header {
 	bottom: 155px;
 	right: 0;
 	padding: 23px;
+	/*MS IE8 opasity support*/
+	background-color: #939393;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	/*other browsers*/
 	background-color: rgba(93, 93, 93, .9);
 	box-shadow: 0 1px #c9c9c9;
 }
