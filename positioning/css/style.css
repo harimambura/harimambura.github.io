@@ -31,6 +31,12 @@ header {
     	behavior: url(PIE.htc);
 }
 
+.IE-border {
+	top: 0;
+	left: 0;
+	position:absolute;
+}
+
 .sprite {
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
