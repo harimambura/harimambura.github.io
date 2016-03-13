@@ -14,6 +14,9 @@
 	<header> 
 		<div class="photo-ring"> 
 			<img class="photo-ph" src="img/avatar-placeholder.png">	
+			<!--[if lt IE 9]>
+			<img class="IE-avatar" src="img/IE8-avatar.png">
+			<![endif]-->	
 		</div>
 		<a href="#"><div class="sprite sprite-Facebook"></div></a>
 		<a href="#"><div class="sprite sprite-Pinterest"></div></a>
@@ -48,12 +51,17 @@
 	</main>
 	
 	<!--[if lt IE 9]>
-	<script type="text/javascript">
-		document.getElementsByClassName("photo-ph")[0].src="img/IE8-avatar.png";
-		document.getElementsByClassName("photo-ph")[0].style.width = "165px";
-		document.getElementsByClassName("photo-ph")[0].style.height = "171px";
-		document.getElementsByClassName("photo-ph")[0].style.marginLeft = "16px"; 
-	</script>
+	<style>
+		.photo-ph {
+			display:none;
+			visibility:hidden;
+		}
+		.IE-avatar {
+			visibility: visible; 
+			margin-left:16px;
+			margin-top:29px;
+		}
+	</style>
 	<![endif]-->
 </body>
 </html>
