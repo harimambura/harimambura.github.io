@@ -13,8 +13,8 @@
 <body>
 	<header> 
 		<div class="photo-ring"> 
-			<!-- <img class="photo-ph" src="img/avatar-placeholder.png">	 -->
-			<!-- <img class="IE-border" src="img/border.png">	 -->
+			<img class="photo-ph" src="img/avatar-placeholder.png">	
+			<img class="IE-avatar" src="img/IE8-avatar.png">	
 		</div>
 		<a href="#"><div class="sprite sprite-Facebook"></div></a>
 		<a href="#"><div class="sprite sprite-Pinterest"></div></a>
@@ -47,14 +47,17 @@
 		 	</div>
 		 </article>
 	</main>
-
+	
 	<!--[if lt IE 9]>
 	<style>
-		.IE-border {
-			visibility: visible;
-			position:absolute;
-			top: -3px;
-			left: -3px; 
+		.photo-ph {
+			display:none;
+			visibility:hidden;
+		}
+		.IE-avatar {
+			visibility: visible; 
+			margin-left:16px;
+			margin-top:29px;
 		}
 	</style>
 	<![endif]-->
