@@ -21,6 +21,10 @@ header {
 	overflow: hidden;
 	/*IE 8 support*/
 	behavior: url(PIE.htc);
+	background-image:url(../img/avatar-placeholder.png);
+	background-repeat: no-repeat;
+	background-position: -5px 29px;
+	background-size: cover;
 }
 
 .photo-ph {
