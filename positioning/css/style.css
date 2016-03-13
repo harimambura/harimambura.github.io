@@ -18,9 +18,9 @@ header {
 	position: relative;
 	border: 3px solid #3593c9;
 	border-radius: 50%;
-	/*IE 8 support*/
-	behavior: url(border-radius.htc);
 	overflow: hidden;
+	/*IE 8 support*/
+	behavior: url(../PIE.htc);
 }
 
 .photo-ph {
