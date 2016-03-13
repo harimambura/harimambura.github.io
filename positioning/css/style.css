@@ -20,10 +20,11 @@ header {
 	border-radius: 50%;
 	overflow: hidden;
 	/*IE 8 support*/
-	background-image:url(../img/avatar-placeholder.png);
+	/* background-image:url(../img/avatar-placeholder.png); */
 	background-repeat: no-repeat;
 	background-position: -5px 29px;
-	background-size: cover;
+	/* background-size: cover; */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/avatar-placeholder.png',sizingMethod='scale');
 	behavior: url(PIE.htc);
 }
 
