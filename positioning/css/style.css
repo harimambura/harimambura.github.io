@@ -19,7 +19,6 @@ header {
 	border: 3px solid #3593c9;
 	border-radius: 50%;
 	overflow: hidden;
-	z-index:1;
 	/*IE 8 support*/
 	behavior: url(PIE.htc);
 }
@@ -28,7 +27,7 @@ header {
 	width: 200px;
 	height: 200px;
 	margin-top: 29px;
-	@include border-radius(50%);
+	border-radius: 50%;
     	behavior: url(PIE.htc);
 }
 
