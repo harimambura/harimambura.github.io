@@ -18,6 +18,8 @@ header {
 	position: relative;
 	border: 3px solid #3593c9;
 	border-radius: 50%;
+	/*IE 8 support*/
+	behavior: url(border-radius.htc);
 	overflow: hidden;
 }
 
@@ -138,7 +140,7 @@ header {
 
 .alert-message {
 	height: 100%;
-	margin-left: 1rem;
+	margin-left: 16px;
 	float: left;
 	color: #fff;
 }
