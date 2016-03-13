@@ -20,7 +20,7 @@ header {
 	border-radius: 50%;
 	overflow: hidden;
 	/*IE 8 support*/
-	behavior: url(../PIE.htc);
+	behavior: url(PIE.htc);
 }
 
 .photo-ph {
