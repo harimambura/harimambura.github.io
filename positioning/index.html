@@ -14,7 +14,6 @@
 	<header> 
 		<div class="photo-ring"> 
 			<img class="photo-ph" src="img/avatar-placeholder.png">	
-			<img class="IE-avatar" src="img/IE8-avatar.png">	
 		</div>
 		<a href="#"><div class="sprite sprite-Facebook"></div></a>
 		<a href="#"><div class="sprite sprite-Pinterest"></div></a>
@@ -49,17 +48,13 @@
 	</main>
 	
 	<!--[if lt IE 9]>
-	<style>
-		.photo-ph {
-			display:none;
-			visibility:hidden;
-		}
-		.IE-avatar {
-			visibility: visible; 
-			margin-left:16px;
-			margin-top:29px;
-		}
-	</style>
+	<script>
+		var avatar = document.getElementsByClassName("photo-ph")[0];
+		avatar.src="img/IE8-avatar.png";
+		avatar.style.width = "165px";
+		avatar.style.height = "171px";
+		avatar.style.marginLeft = "16px"; 
+	</script>
 	<![endif]-->
 </body>
 </html>
