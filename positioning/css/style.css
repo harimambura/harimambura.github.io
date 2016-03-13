@@ -24,7 +24,7 @@ header {
 	background-repeat: no-repeat;
 	background-position: -5px 29px;
 	/* background-size: cover; */
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/avatar-placeholder.png',sizingMethod='scale');
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/avatar-placeholder.png',sizingMethod='scale');
 	behavior: url(PIE.htc);
 }
 
