@@ -1,4 +1,5 @@
 body {
+	min-width: 550px;
 	font-size:16px;
 	font-family: Arial, sans-serif;
 	color:#424242;
@@ -69,11 +70,14 @@ nav{
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+	transition: background-color .2s, color .3s;
 }
 
 .nav-item a:hover {
 	background-color: #fff;
 	color: #000;
+	/*transition: all .3s;*/
+	transition: background-color .2s, color .3s;
 }
 
 .nav-item a:target {
