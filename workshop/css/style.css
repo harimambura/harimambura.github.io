@@ -1,0 +1,47 @@
+body {
+	font-size:16px;
+	font-family: Arial, sans-serif;
+	color:#424242;
+}
+
+header {
+	width: 80%;
+	min-height: 150px;
+	position: relative;
+	margin:0 auto;
+	background-color: #B5B5B5;
+	border:1px solid black;
+}
+
+.logo {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	float: left;
+	background-color: 	white;
+}
+
+.head-content {
+	float: left;
+	margin-top: 10px;
+}
+
+h1, h2 {
+	text-transform:uppercase;
+	color: #747474;
+	margin: 0 auto;
+}
+
+.head::after {
+	content: '.';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+nav{
+	height: 30px;
+	width: 100%;
+	background-color: #000;
+}
