@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  font-style: Helvetica, Arial, sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  min-height: 80px;
+  margin: 0;
+  padding: 0;
+  background-color: #c8c7c6;
+}
+
+h1 {
+  margin: 0;
+}
+
+.main-nav {
+  height: calc(100% - 160px);
+  width: 25%;
+  float: left;
+  background-color: #dadad9;
+}
+
+.content {
+  height: calc(100% - 160px);
+  width: 55%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div[class*="post"] {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: red;
+}
+
+img {
+  float: left;
+}
+
+.ads {
+    height: calc(100% - 160px);
+    width: 20%;
+    float: right;
+    background-color: green;
+}
+
+.main-footer {
+  min-height: 80px;
+  width: 100%;
+  background-color: #c8c7c6;
+}
