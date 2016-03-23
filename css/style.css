@@ -127,7 +127,7 @@ h1 {
 	border-left:1px solid #BBBBBB;
 	border-right: 1px solid #BBBBBB;
 	border-radius: 5px;
-	background: rgba(230, 230, 230, .45);	
+	background: rgba(230, 230, 230, .45);
 	overflow:hidden;
 	text-align:center;
 	font-family:HelveticaMedium;
@@ -138,7 +138,7 @@ h1 {
 }
 
 .submenu:hover {
-	height: 415px;
+	height: 585px;
 	transition:all 0.5s;
 }
 
@@ -150,7 +150,7 @@ h1 {
 
 .link >ul>li{
 	/*padding-top:30px;*/
-	margin: 0; 
+	margin: 0;
 	list-style: none;
 	border-bottom:1px solid #D9D8D8;
 }
@@ -194,14 +194,14 @@ h2 {
 
 .frm_block {
 	width: 540px;
-	float: left;	
+	float: left;
 	padding:5px 10px 5px 10px;
 }
 
 .txt_block {
 	max-width: 610px;
 	float: right;
-	margin-right: 0px;	
+	margin-right: 0px;
 	padding:10px 5px 10px 5px;
 	word-wrap: break-word;
 	text-indent: 20px;
@@ -214,7 +214,7 @@ h2 {
 }
 
 .description{
-	
+
 }
 
 .post {

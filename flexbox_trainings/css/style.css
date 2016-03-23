@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*направление главной оси*/
+  flex-direction: row;
+  /*выравнивание элементов, распределение по контейнеру
+  свойство выравнивает по главной оси*/
+  justify-content: flex-start;
+  /*выравнивание + растягивание элементов (stretch)
+  (свойство выравнивает по побочной оси)*/
+  align-items: stretch;
+  flex-wrap: wrap;
+/*align-content - свойство для flex-wrap, перебивает собой align-items, делает то же самое, но относительно wrap*/
+  align-content: center;
+}
+
+.block {
+  width: 400px;
+  margin: 20px;
+  padding: 10px;
+  background-color: yellow;
+  border: 1px solid green;
+   transition: transform .5s;
+}
+
+ div:hover {
+   transition: transform .5s;
+   transform: scale(1.07);
+   /*transform: skewX(10deg);*/
+   /*transform:rotate3d(0,5,3,10deg);*/
+ }
+
+.flex {
+
+}
