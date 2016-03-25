@@ -309,9 +309,20 @@ a {
 .about-us {
   width: 100%;
   display: flex;
+  /*flex-direction: column;*/
   align-items: stretch;
   justify-content: space-between;
   /*justify-content: space-around;*/
+}
+
+.about-us h2 {
+  text-transform: uppercase;
+  font-family: Bebas;
+  font-size: 20.18px;
+}
+
+.about-us h2>span {
+  color: #faa61a;
 }
 
 .about-box {
@@ -327,24 +338,68 @@ a {
   border-right: none;
 }
 
+.about-box::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: -12px;
+  right: -9px;
+  background-image: url(../img/delimiter-up.png);
+}
+
+.about-box::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  bottom: -12px;
+  right: -9px;
+  background-image: url(../img/delimiter-down.png);
+}
+
+.about-box:last-child::after {
+  content: '';
+  display: none;
+}
+
+.about-box:last-child::before {
+  content: '';
+  display: none;
+}
+
 .about-box.did-you-know{
   flex-grow:3;
 }
 
+.about-box.contact {
+  padding-right: 20px;
+  /*flex-basis: 291px;*/
+}
+
 .contact-list {
+  width: 100%;
   margin: 0;
+  padding: 0;
   display: block;
   list-style: none;
+  font-family: Bebas;
+  font-size: 16.18px;
 }
 
 .contact-list > li {
   display: inline-block;
-  height: 30px;
+  height: 46px;
 }
 
 .contact-list span {
   margin: 1px;
   padding: 2px;
+  display: inline-block;
   color: white;
   background-color: black;
 }
@@ -353,20 +408,35 @@ a {
   font-size: 1.7rem;
 }
 
+li.email, li.address {
+  font-family: CicleFina;
+  letter-spacing: 1px;
+}
+
+li.mobile span, li.fax span{
+  padding-right: 15px;
+}
+
+.contact-list .email span{
+  /*width:190px;*/
+  padding-right: 40px;
+}
+
+li.address {
+  width: 100%;
+  display: block;
+}
+
 li.address span {
   display: inline-block;
 }
 
-.addr1 {
-  /*margin-right: 20px;*/
-}
-
-.addr2 {
-  margin-left: 100px;
-  /*padding-left: 110px;*/
-  /*margin-right: 40px;*/
-}
-
 .addr3 {
-  width: 70%;
+  width: 100%;
+}
+
+.tst {
+  width:160px;
+  margin-top: -24px;
+  margin-left: 38px;
 }
