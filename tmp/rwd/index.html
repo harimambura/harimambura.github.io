@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/fontello.css">
@@ -18,26 +18,34 @@
       <h2>Lispum <span class="logo-word">Media</span></h2>
       </a>
     </div>
-    <nav class="header-nav">
-      <ul class="nav-list">
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">work</a></li>
-        <li><a href="#">services</a></li>
-        <li><a href="#">resources</a></li>
-        <li><a href="#">articles</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
+    <label for="header-nav-checkbox" class="nav-label">&#9776;</label>
+    <input type="checkbox" id="header-nav-checkbox" class="hidden-checkbox">
+    <div class="wrapper">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">resources</a></li>
+          <li><a href="#">articles</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="content">
+  <main class="content" role="main">
     <article class="banner">
       <h1>Lipsum Media Presentation</h1>
       <div class="video-box">
-        <video src="#" poster="img/panda.jpg">
-          Sorry, but your browser doesn't support HTML5 video.
-        </video>
-        <img src="img/spritesheet.png" alt="play button" class="play-btn"/>
+        <picture>
+          <source srcset="img/panda.jpg" media="(min-width: 1025px)">
+          <source srcset="img/panda-medium.jpg" media="(min-width: 615px)">
+          <img srcset="img/panda-small.jpg"  alt="video poster image" class="video-img">
+          <div class="play-btn-wrapper">
+            <img src="img/play-btn.png" alt="play button" class="play-btn"/>
+          </div>
+        </picture>
         <div class="about-video-box">
           <div class="info-box client-info">
             <span class="title">Client</span>

@@ -15,16 +15,6 @@
 
 @font-face {
     font-family: "Bebas";
-    src: url("../font/BebasRegular.eot");
-    src: url("../font/BebasRegular.eot?#iefix")format("embedded-opentype"),
-    url("../font/BebasRegular.woff") format("woff"),
-    url("../font/BebasRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: lighter;
-}
-
-@font-face {
-    font-family: "Bebas";
     src: url("../font/BebasBold.eot");
     src: url("../font/BebasBold.eot?#iefix")format("embedded-opentype"),
     url("../font/BebasBold.woff") format("woff"),
@@ -53,6 +43,7 @@
 /********basic styles************/
 html, body {
   height: 100%;
+  min-width: 310px;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
@@ -128,6 +119,8 @@ h3>span {
 }
 
 .read-more-btn a {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   display: block;
@@ -143,7 +136,8 @@ h3>span {
   font-family: Colaborate, Arial, sans-serif;
   font-size: 14px;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 23px;
+  vertical-align: text-top;
   color: white;
   background-color: black;
 }
@@ -153,13 +147,33 @@ h3>span {
   display: block;
   position: absolute;
   left: 77px;
-  top: -1px;
+  top: 0;
   font-family: fontello;
   font-style: normal;
   color: black;
 }
-/*****end of basic styles************/
 
+.hidden-checkbox {
+  display: none;
+  visibility: hidden;
+}
+
+.nav-label {
+  min-height: 80px;
+  padding: 15px 15px 0 15px;
+  box-sizing: border-box;
+  display: none;
+  text-align: right;
+  font-size: 32px;
+  color: orange;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: inline;
+  transition: height 0.3s ease-in-out;
+}
+/*****end of basic styles************/
 /********HEADER styles*************/
 .main-header {
   padding-top: 30px;
@@ -269,19 +283,20 @@ h3>span {
   flex-basis: 100%;
   text-align: center;
   font-family: HelveticaLT, Arial, sans-serif;
-  font-size: 124px;
   font-weight: lighter;
   text-transform: uppercase;
-  /***I used text-shadow for visual font smoothing **/
-   text-shadow:-1px -1px 1px rgba(255,255,255,0.2),    1px 1px 1px rgba(255,255,255,0.2),    1px 1px 1px rgba(0,0,0,0.7);
-   -webkit-font-smoothing: antialiased;
 }
 
-.video-box {
+.video-box picture{
   position: relative;
+  float: left;
 }
 
-.video-box video {
+.video-box .play-btn-wrapper {
+  display: inline;
+}
+
+.video-box img {
     cursor: pointer;
 }
 
@@ -289,19 +304,16 @@ h3>span {
   width: 62px;
   height: 62px;
   position: absolute;
-  top: 150px;
-  left: 210px;
-  cursor: pointer;
-  content: url(../img/play-btn.png);
+  /*content: url(../img/play-btn.png);*/
 }
 
-@supports (object-position: 0 0) and (object-fit: none) {
+/*@supports (object-position: 0 0) and (object-fit: none) {
   .video-box .play-btn {
     object-fit: none;
     object-position:  -85px -133px;
     content: url(../img/spritesheet.png);
   }
-}
+}*/
 
 .about-video-box {
   width: 200px;
@@ -522,13 +534,16 @@ li.address span {
 /*********OUR CLIENTS styles*******/
 .our-clients {
   padding: 20px 50px 30px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .our-clients h3 {
   width: 100%;
+}
+
+.clients-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .client-logo {
@@ -615,4 +630,264 @@ li.address span {
   font-family: CenturyGothic, Arial, sans-serif;
   text-transform: uppercase;
   text-align: right;
+}
+
+/***********MEDIA QUERIES************/
+
+@media screen and (min-width: 1025px) {
+  .banner h1 {
+    font-size: 124px;
+    /***I used text-shadow for visual font smoothing **/
+     text-shadow:-1px -1px 1px rgba(255,255,255,0.2),    1px 1px 1px rgba(255,255,255,0.2),    1px 1px 1px rgba(0,0,0,0.7);
+     -webkit-font-smoothing: antialiased;
+  }
+
+  .video-box .play-btn {
+    top: 150px;
+    left: 210px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 96px;
+  }
+
+  .banner,
+  .about-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .video-box .play-btn {
+    top: 110px;
+    left: 150px;
+  }
+
+  .about-video-box,
+  .project-descr-box {
+    height: 273px;
+  }
+
+  .project-descr-box .descr-text {
+    height: 53px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 910px)  {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-nav {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 875px)  {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.about-us {
+  flex-direction: column;
+}
+  .project-descr-box {
+    max-width: 525px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .project-descr-box img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+.project-descr-box .descr-text {
+  height: auto;
+}
+
+  .about-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .services-list li {
+    display: block;
+  }
+
+  .about-box::before,
+  .about-box::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-footer .logo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    order: 2;
+  }
+
+  .footer-nav {
+    order: 1;
+  }
+
+  .main-footer .copy {
+    width: auto;
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .banner h1 {
+    font-size: 76px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .main-header {
+    min-height: 30px;
+    margin-bottom: 5px;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+  }
+
+  .main-header .logo {
+    margin: 5px;
+  }
+
+  .main-header .logo,
+  .main-header .logo span {
+    color: orange;
+  }
+
+  .main-header h2 {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    height: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .nav-label {
+    display: block;
+    border-left: 1px solid orange;
+    color: black;
+    background-color: orange;
+  }
+
+  .main-header .wrapper {
+    background-color: orange;
+  }
+
+  #header-nav-checkbox:checked ~ div.wrapper {
+    height: 400px;
+    transition: height 0.3s  ease-in-out;
+    background-color: orange;
+  }
+
+  .header-nav,
+  .banner .about-video-box,
+  .banner .video-img,
+  .video-box picture {
+    width: 100%;
+    float: none;
+  }
+
+  .video-box picture {
+    display: block;
+  }
+
+  .header-nav .nav-list {
+    width: calc(100% - 40px);
+    margin-right: 20px;
+  }
+
+  .header-nav li {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-right: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: block;
+    color: orange;
+    background-color: black;
+  }
+
+  .header-nav li:last-child {
+    padding-right: 0;
+  }
+
+  .header-nav li:before,
+  .main-footer .footer-nav {
+    display: none;
+  }
+
+  .header-nav li a::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .header-nav li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+
+  .video-box .play-btn {
+    top: calc(50% - 62px/2);
+    left: calc(50% + 15px - 62px/2); /*+15px is only for visual similarity*/
+  }
+
+  .about-video-box {
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .project-descr-box {
+    max-width: 100%;
+  }
+
+  .project-descr-info .info {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .did-you-know p {
+    font-size: 20px;
+  }
 }
