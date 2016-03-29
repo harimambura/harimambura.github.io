@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="widget first-widget">
+    <form action="index.html" method="post">
+      <header class="first-widget-header">
+        <button type="button" class="button header-button prev sprite"></button>
+        <button type="button" class="button header-button current">May 2014</button>
+        <button type="button" class="button header-button next sprite"></button>
+      </header>
+      <div class="main">
+        <table class="calendar">
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td><span class="day another-month">29</span></td>
+            <td><span class="day another-month">30</span></td>
+            <td><span class="day">1</span></td>
+            <td><span class="day">2</span></td>
+            <td><span class="day selected vertical-middle-text">3</span></td>
+            <td><span class="day">4</span></td>
+            <td><span class="day">5</span></td>
+          </tr>
+          <tr>
+            <td><span class="day">6</span></td>
+            <td><span class="day holiday">7</span></td>
+            <td><span class="day">8</span></td>
+            <td><span class="day">9</span></td>
+            <td><span class="day">10</span></td>
+            <td><span class="day">11</span></td>
+            <td><span class="day">12</span></td>
+          </tr>
+          <tr>
+            <td><span class="day">13</span></td>
+            <td><span class="day">14</span></td>
+            <td><span class="day">15</span></td>
+            <td><span class="day">16</span></td>
+            <td><span class="day">17</span></td>
+            <td><span class="day">18</span></td>
+            <td><span class="day">19</span></td>
+          </tr>
+          <tr>
+            <td><span class="day">20</span></td>
+            <td><span class="day">21</span></td>
+            <td><span class="day">22</span></td>
+            <td><span class="day holiday">23</span></td>
+            <td><span class="day">24</span></td>
+            <td><span class="day">25</span></td>
+            <td><span class="day">26</span></td>
+          </tr>
+          <tr>
+            <td><span class="day">27</span></td>
+            <td><span class="day">28</span></td>
+            <td><span class="day">29</span></td>
+            <td><span class="day">30</span></td>
+            <td><span class="day another-month">1</span></td>
+            <td><span class="day another-month">2</span></td>
+            <td><span class="day another-month">3</span></td>
+          </tr>
+        </table>
+        <button type="button" name="button" class="button big-button">Add event</button>
+      </div>
+    </form>
+  </div>
+  <div class="widget second-widget">
+      <header  class="second-widget-header">
+        <figure class="header-img">
+          <img src="img/picture1.jpg" alt="beautiful picture" />
+          <figcaption>
+            <span class="caption building"><a href="#">Hotel Relais</a></span>
+            <span class="caption point sprite"><a href="#">Paris, France</a></span>
+          </figcaption>
+        </figure>
+      </header>
+      <div class="main">
+        <form action="index.html" method="post">
+        <dl class="input-date-list">
+          <dt>
+            <label for="check-in" class="custom-label check-label">Check in</label>
+          </dt>
+          <dd>
+            <div class="input-wrapper date-wrapper">
+              <input type="text" id="check-in" name="check-in" class="text-input date-input" placeholder="9 July, 2016" value="">
+              <button type="button" name="call-calendar" class="input-button call-calendar sprite"></button>
+            </div>
+          </dd>
+          <dt>
+            <label for="check-out" class="custom-label check-label">Check out</label>
+          </dt>
+          <dd>
+            <div class="input-wrapper date-wrapper">
+              <input type="text" id="check-out" name="check-out" class="text-input date-input" placeholder="16 July, 2016" value="">
+              <button type="button" name="call-calendar" class="input-button call-calendar sprite"></button>
+            </div>
+          </dd>
+        </dl>
+        <div class="checkbox">
+          <input type="checkbox" id="flex-dates" class="flex-dates-checkbox" name="name" value="">
+          <label for="flex-dates" class="custom-label flex-dates-label">Flexible dates</label>
+        </div>
+        <div class="people-select">
+          <dl class="adults">
+            <dt>
+              <label for="adults-select" class="custom-label">Adults</label>
+            </dt>
+            <dd>
+              <div class="input-wrapper">
+                <select class="dropdown-list" name="adults" id="adults-select">
+                  <option value="2" selected>2</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+          <dl class="children">
+            <dt>
+              <label for="children-select" class="custom-label">Children</label>
+            </dt>
+            <dd>
+              <div class="input-wrapper">
+                <select class="dropdown-list" name="children" id="children-select">
+                  <option value="1" selected>1</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <button type="button" name="button" class="button big-button search sprite">Search rooms</button>
+      </form>
+      </div>
+  </div>
+</body>
+</html>
