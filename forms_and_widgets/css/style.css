@@ -158,6 +158,8 @@ body {
   -ms-appearance: none;
   appearance: none;
   text-overflow: ellipsis;
+  position: relative;
+  z-index: 2;
   font-size: 16px;
   color:  #414b59;
 }
@@ -179,9 +181,10 @@ body {
 }
 
 .input-wrapper {
-  min-height: 44px;
+  height: 44px;
   margin: 0;
   padding: 0;
+  position: relative;
   border-top: 1px solid #bebebe;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
@@ -405,6 +408,36 @@ dd {
 .people-select dt,
 .people-select dd {
   margin-left: 0;
+}
+
+
+select.custom-dropdown {
+  /*width: 140px;*/
+  position: relative;
+  z-index: 2;
+  background: none;
+}
+
+.select-wrapper {
+  width: 137px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  background: none;
+}
+
+.select-button {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #414b59;
+  background-position: -16px -378px;
 }
 
 .search {
