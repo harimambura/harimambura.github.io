@@ -78,7 +78,7 @@
     <div class="widget second-widget">
         <header  class="second-widget-header">
           <figure class="header-img">
-            <img src="img/picture1.jpg" alt="beautiful picture" />
+            <img src="img/picture1.jpg" alt="beautiful picture"/>
             <figcaption>
               <span class="caption building"><a href="#">Hotel Relais</a></span>
               <span class="caption point sprite"><a href="#">Paris, France</a></span>
@@ -93,7 +93,8 @@
             </dt>
             <dd>
               <div class="input-wrapper date-wrapper">
-                <input type="text" id="check-in" name="check-in" class="text-input date-input" placeholder="9 July, 2016" value="">
+                <!--  Because placeholder is not supported in IE 9, I set date into value attribute-->
+                <input type="text" id="check-in" name="check-in" class="text-input date-input" value="9 July, 2016">
                 <button type="button" name="call-calendar" class="input-button call-calendar sprite"></button>
               </div>
             </dd>
@@ -102,7 +103,8 @@
             </dt>
             <dd>
               <div class="input-wrapper date-wrapper">
-                <input type="text" id="check-out" name="check-out" class="text-input date-input" placeholder="16 July, 2016" value="">
+                <!--  Because placeholder is not supported in IE 9, I set date into value attribute-->
+                <input type="text" id="check-out" name="check-out" class="text-input date-input" value="16 July, 2016">
                 <button type="button" name="call-calendar" class="input-button call-calendar sprite"></button>
               </div>
             </dd>
@@ -161,8 +163,8 @@
         <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam sollicitudin. </p>
         <a href="#" class="read-more">Read more</a>
       </div>
-      <div class="preview vertical-bottom-text">
-        <!-- <img src="img/picture2.jpg" alt="place photo" class="place-photo"/> -->
+      <div class="preview">
+        <img src="img/picture2.jpg" alt="place photo" class="place-photo"/>
         <div class="social-block">
           <a href="#" class="comment sprite">752</a>
           <a href="#" class="like sprite">2709</a>
