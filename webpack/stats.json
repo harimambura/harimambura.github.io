@@ -1,0 +1,1635 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "1.13.1",
+  "hash": "f5cf2c7702b0f74aebf8",
+  "time": 1692,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "main": [
+      "bundle.js",
+      "bundle.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "bundle.js",
+      "size": 25958,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "bundle.js.map",
+      "size": 35473,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 23337,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "bundle.js",
+        "bundle.js.map"
+      ],
+      "hash": "bff8c7e3715c89769e63",
+      "parents": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "name": "./app.js",
+          "index": 0,
+          "index2": 19,
+          "size": 192,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 23,
+            "building": 40
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "require('./components/styles/app.scss');\r\nvar {week, weekModel} = require('./components/');\r\n\r\nwindow.addEventListener('load', ()=>{\r\n document.body.appendChild(week(new weekModel(1)));\r\n});\r\n"
+        },
+        {
+          "id": 1,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "name": "./components/styles/app.scss",
+          "index": 1,
+          "index2": 3,
+          "size": 1102,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "profile": {
+            "factory": 48,
+            "building": 48
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+              "module": "./app.js",
+              "moduleName": "./app.js",
+              "type": "cjs require",
+              "userRequest": "./components/styles/app.scss",
+              "loc": "1:0-39"
+            }
+          ],
+          "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+        },
+        {
+          "id": 2,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+          "index": 2,
+          "index2": 1,
+          "size": 751,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "profile": {
+            "factory": 3,
+            "building": 1196
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+              "module": "./components/styles/app.scss",
+              "moduleName": "./components/styles/app.scss",
+              "type": "cjs require",
+              "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss",
+              "loc": "4:14-140"
+            }
+          ],
+          "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \"html, body {\\n  margin: 0;\\n  padding: 0; }\\n\\nbody {\\n  height: 100%;\\n  min-width: 800px;\\n  padding-top: 20px;\\n  font: 16px Arial, Helvetica, sans-serif; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/app.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,UAAU;EACV,WAAW,EACZ;;AACD;EACE,aAAa;EACb,iBAAiB;EACjB,kBAAkB;EAClB,wCAAwC,EACzC\",\"file\":\"app.scss\",\"sourcesContent\":[\"html, body {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\nbody {\\r\\n  height: 100%;\\r\\n  min-width: 800px;\\r\\n  padding-top: 20px;\\r\\n  font: 16px Arial, Helvetica, sans-serif;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+        },
+        {
+          "id": 3,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\lib\\css-base.js",
+          "name": "./~/css-loader/lib/css-base.js",
+          "index": 3,
+          "index2": 0,
+          "size": 1506,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "profile": {
+            "factory": 17,
+            "building": 42
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+              "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+              "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+              "type": "cjs require",
+              "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-85"
+            },
+            {
+              "moduleId": 8,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+              "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+              "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+              "type": "cjs require",
+              "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-85"
+            },
+            {
+              "moduleId": 11,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+              "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+              "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+              "type": "cjs require",
+              "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-85"
+            },
+            {
+              "moduleId": 14,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+              "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+              "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+              "type": "cjs require",
+              "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+              "loc": "1:27-85"
+            }
+          ],
+          "source": "/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n\tAuthor Tobias Koppers @sokra\r\n*/\r\n// css base code, injected by the css-loader\r\nmodule.exports = function() {\r\n\tvar list = [];\r\n\r\n\t// return the list of modules as css string\r\n\tlist.toString = function toString() {\r\n\t\tvar result = [];\r\n\t\tfor(var i = 0; i < this.length; i++) {\r\n\t\t\tvar item = this[i];\r\n\t\t\tif(item[2]) {\r\n\t\t\t\tresult.push(\"@media \" + item[2] + \"{\" + item[1] + \"}\");\r\n\t\t\t} else {\r\n\t\t\t\tresult.push(item[1]);\r\n\t\t\t}\r\n\t\t}\r\n\t\treturn result.join(\"\");\r\n\t};\r\n\r\n\t// import a list of modules into the list\r\n\tlist.i = function(modules, mediaQuery) {\r\n\t\tif(typeof modules === \"string\")\r\n\t\t\tmodules = [[null, modules, \"\"]];\r\n\t\tvar alreadyImportedModules = {};\r\n\t\tfor(var i = 0; i < this.length; i++) {\r\n\t\t\tvar id = this[i][0];\r\n\t\t\tif(typeof id === \"number\")\r\n\t\t\t\talreadyImportedModules[id] = true;\r\n\t\t}\r\n\t\tfor(i = 0; i < modules.length; i++) {\r\n\t\t\tvar item = modules[i];\r\n\t\t\t// skip already imported module\r\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\r\n\t\t\t//  when a module is imported multiple times with different media queries.\r\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\r\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\r\n\t\t\t\tif(mediaQuery && !item[2]) {\r\n\t\t\t\t\titem[2] = mediaQuery;\r\n\t\t\t\t} else if(mediaQuery) {\r\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\r\n\t\t\t\t}\r\n\t\t\t\tlist.push(item);\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\treturn list;\r\n};\r\n"
+        },
+        {
+          "id": 4,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\addStyles.js",
+          "name": "./~/style-loader/addStyles.js",
+          "index": 4,
+          "index2": 2,
+          "size": 7154,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "profile": {
+            "factory": 1065,
+            "building": 84
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+              "module": "./components/styles/app.scss",
+              "moduleName": "./components/styles/app.scss",
+              "type": "cjs require",
+              "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+              "loc": "7:13-71"
+            },
+            {
+              "moduleId": 7,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+              "module": "./components/styles/weekstyle.scss",
+              "moduleName": "./components/styles/weekstyle.scss",
+              "type": "cjs require",
+              "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+              "loc": "7:13-71"
+            },
+            {
+              "moduleId": 10,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+              "module": "./components/styles/daystyle.scss",
+              "moduleName": "./components/styles/daystyle.scss",
+              "type": "cjs require",
+              "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+              "loc": "7:13-71"
+            },
+            {
+              "moduleId": 13,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+              "module": "./components/styles/hourstyle.scss",
+              "moduleName": "./components/styles/hourstyle.scss",
+              "type": "cjs require",
+              "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+              "loc": "7:13-71"
+            }
+          ],
+          "source": "/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n\tAuthor Tobias Koppers @sokra\r\n*/\r\nvar stylesInDom = {},\r\n\tmemoize = function(fn) {\r\n\t\tvar memo;\r\n\t\treturn function () {\r\n\t\t\tif (typeof memo === \"undefined\") memo = fn.apply(this, arguments);\r\n\t\t\treturn memo;\r\n\t\t};\r\n\t},\r\n\tisOldIE = memoize(function() {\r\n\t\treturn /msie [6-9]\\b/.test(window.navigator.userAgent.toLowerCase());\r\n\t}),\r\n\tgetHeadElement = memoize(function () {\r\n\t\treturn document.head || document.getElementsByTagName(\"head\")[0];\r\n\t}),\r\n\tsingletonElement = null,\r\n\tsingletonCounter = 0,\r\n\tstyleElementsInsertedAtTop = [];\r\n\r\nmodule.exports = function(list, options) {\r\n\tif(typeof DEBUG !== \"undefined\" && DEBUG) {\r\n\t\tif(typeof document !== \"object\") throw new Error(\"The style-loader cannot be used in a non-browser environment\");\r\n\t}\r\n\r\n\toptions = options || {};\r\n\t// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\r\n\t// tags it will allow on a page\r\n\tif (typeof options.singleton === \"undefined\") options.singleton = isOldIE();\r\n\r\n\t// By default, add <style> tags to the bottom of <head>.\r\n\tif (typeof options.insertAt === \"undefined\") options.insertAt = \"bottom\";\r\n\r\n\tvar styles = listToStyles(list);\r\n\taddStylesToDom(styles, options);\r\n\r\n\treturn function update(newList) {\r\n\t\tvar mayRemove = [];\r\n\t\tfor(var i = 0; i < styles.length; i++) {\r\n\t\t\tvar item = styles[i];\r\n\t\t\tvar domStyle = stylesInDom[item.id];\r\n\t\t\tdomStyle.refs--;\r\n\t\t\tmayRemove.push(domStyle);\r\n\t\t}\r\n\t\tif(newList) {\r\n\t\t\tvar newStyles = listToStyles(newList);\r\n\t\t\taddStylesToDom(newStyles, options);\r\n\t\t}\r\n\t\tfor(var i = 0; i < mayRemove.length; i++) {\r\n\t\t\tvar domStyle = mayRemove[i];\r\n\t\t\tif(domStyle.refs === 0) {\r\n\t\t\t\tfor(var j = 0; j < domStyle.parts.length; j++)\r\n\t\t\t\t\tdomStyle.parts[j]();\r\n\t\t\t\tdelete stylesInDom[domStyle.id];\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n}\r\n\r\nfunction addStylesToDom(styles, options) {\r\n\tfor(var i = 0; i < styles.length; i++) {\r\n\t\tvar item = styles[i];\r\n\t\tvar domStyle = stylesInDom[item.id];\r\n\t\tif(domStyle) {\r\n\t\t\tdomStyle.refs++;\r\n\t\t\tfor(var j = 0; j < domStyle.parts.length; j++) {\r\n\t\t\t\tdomStyle.parts[j](item.parts[j]);\r\n\t\t\t}\r\n\t\t\tfor(; j < item.parts.length; j++) {\r\n\t\t\t\tdomStyle.parts.push(addStyle(item.parts[j], options));\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tvar parts = [];\r\n\t\t\tfor(var j = 0; j < item.parts.length; j++) {\r\n\t\t\t\tparts.push(addStyle(item.parts[j], options));\r\n\t\t\t}\r\n\t\t\tstylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfunction listToStyles(list) {\r\n\tvar styles = [];\r\n\tvar newStyles = {};\r\n\tfor(var i = 0; i < list.length; i++) {\r\n\t\tvar item = list[i];\r\n\t\tvar id = item[0];\r\n\t\tvar css = item[1];\r\n\t\tvar media = item[2];\r\n\t\tvar sourceMap = item[3];\r\n\t\tvar part = {css: css, media: media, sourceMap: sourceMap};\r\n\t\tif(!newStyles[id])\r\n\t\t\tstyles.push(newStyles[id] = {id: id, parts: [part]});\r\n\t\telse\r\n\t\t\tnewStyles[id].parts.push(part);\r\n\t}\r\n\treturn styles;\r\n}\r\n\r\nfunction insertStyleElement(options, styleElement) {\r\n\tvar head = getHeadElement();\r\n\tvar lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];\r\n\tif (options.insertAt === \"top\") {\r\n\t\tif(!lastStyleElementInsertedAtTop) {\r\n\t\t\thead.insertBefore(styleElement, head.firstChild);\r\n\t\t} else if(lastStyleElementInsertedAtTop.nextSibling) {\r\n\t\t\thead.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);\r\n\t\t} else {\r\n\t\t\thead.appendChild(styleElement);\r\n\t\t}\r\n\t\tstyleElementsInsertedAtTop.push(styleElement);\r\n\t} else if (options.insertAt === \"bottom\") {\r\n\t\thead.appendChild(styleElement);\r\n\t} else {\r\n\t\tthrow new Error(\"Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.\");\r\n\t}\r\n}\r\n\r\nfunction removeStyleElement(styleElement) {\r\n\tstyleElement.parentNode.removeChild(styleElement);\r\n\tvar idx = styleElementsInsertedAtTop.indexOf(styleElement);\r\n\tif(idx >= 0) {\r\n\t\tstyleElementsInsertedAtTop.splice(idx, 1);\r\n\t}\r\n}\r\n\r\nfunction createStyleElement(options) {\r\n\tvar styleElement = document.createElement(\"style\");\r\n\tstyleElement.type = \"text/css\";\r\n\tinsertStyleElement(options, styleElement);\r\n\treturn styleElement;\r\n}\r\n\r\nfunction createLinkElement(options) {\r\n\tvar linkElement = document.createElement(\"link\");\r\n\tlinkElement.rel = \"stylesheet\";\r\n\tinsertStyleElement(options, linkElement);\r\n\treturn linkElement;\r\n}\r\n\r\nfunction addStyle(obj, options) {\r\n\tvar styleElement, update, remove;\r\n\r\n\tif (options.singleton) {\r\n\t\tvar styleIndex = singletonCounter++;\r\n\t\tstyleElement = singletonElement || (singletonElement = createStyleElement(options));\r\n\t\tupdate = applyToSingletonTag.bind(null, styleElement, styleIndex, false);\r\n\t\tremove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);\r\n\t} else if(obj.sourceMap &&\r\n\t\ttypeof URL === \"function\" &&\r\n\t\ttypeof URL.createObjectURL === \"function\" &&\r\n\t\ttypeof URL.revokeObjectURL === \"function\" &&\r\n\t\ttypeof Blob === \"function\" &&\r\n\t\ttypeof btoa === \"function\") {\r\n\t\tstyleElement = createLinkElement(options);\r\n\t\tupdate = updateLink.bind(null, styleElement);\r\n\t\tremove = function() {\r\n\t\t\tremoveStyleElement(styleElement);\r\n\t\t\tif(styleElement.href)\r\n\t\t\t\tURL.revokeObjectURL(styleElement.href);\r\n\t\t};\r\n\t} else {\r\n\t\tstyleElement = createStyleElement(options);\r\n\t\tupdate = applyToTag.bind(null, styleElement);\r\n\t\tremove = function() {\r\n\t\t\tremoveStyleElement(styleElement);\r\n\t\t};\r\n\t}\r\n\r\n\tupdate(obj);\r\n\r\n\treturn function updateStyle(newObj) {\r\n\t\tif(newObj) {\r\n\t\t\tif(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)\r\n\t\t\t\treturn;\r\n\t\t\tupdate(obj = newObj);\r\n\t\t} else {\r\n\t\t\tremove();\r\n\t\t}\r\n\t};\r\n}\r\n\r\nvar replaceText = (function () {\r\n\tvar textStore = [];\r\n\r\n\treturn function (index, replacement) {\r\n\t\ttextStore[index] = replacement;\r\n\t\treturn textStore.filter(Boolean).join('\\n');\r\n\t};\r\n})();\r\n\r\nfunction applyToSingletonTag(styleElement, index, remove, obj) {\r\n\tvar css = remove ? \"\" : obj.css;\r\n\r\n\tif (styleElement.styleSheet) {\r\n\t\tstyleElement.styleSheet.cssText = replaceText(index, css);\r\n\t} else {\r\n\t\tvar cssNode = document.createTextNode(css);\r\n\t\tvar childNodes = styleElement.childNodes;\r\n\t\tif (childNodes[index]) styleElement.removeChild(childNodes[index]);\r\n\t\tif (childNodes.length) {\r\n\t\t\tstyleElement.insertBefore(cssNode, childNodes[index]);\r\n\t\t} else {\r\n\t\t\tstyleElement.appendChild(cssNode);\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfunction applyToTag(styleElement, obj) {\r\n\tvar css = obj.css;\r\n\tvar media = obj.media;\r\n\r\n\tif(media) {\r\n\t\tstyleElement.setAttribute(\"media\", media)\r\n\t}\r\n\r\n\tif(styleElement.styleSheet) {\r\n\t\tstyleElement.styleSheet.cssText = css;\r\n\t} else {\r\n\t\twhile(styleElement.firstChild) {\r\n\t\t\tstyleElement.removeChild(styleElement.firstChild);\r\n\t\t}\r\n\t\tstyleElement.appendChild(document.createTextNode(css));\r\n\t}\r\n}\r\n\r\nfunction updateLink(linkElement, obj) {\r\n\tvar css = obj.css;\r\n\tvar sourceMap = obj.sourceMap;\r\n\r\n\tif(sourceMap) {\r\n\t\t// http://stackoverflow.com/a/26603875\r\n\t\tcss += \"\\n/*# sourceMappingURL=data:application/json;base64,\" + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + \" */\";\r\n\t}\r\n\r\n\tvar blob = new Blob([css], { type: \"text/css\" });\r\n\r\n\tvar oldSrc = linkElement.href;\r\n\r\n\tlinkElement.href = URL.createObjectURL(blob);\r\n\r\n\tif(oldSrc)\r\n\t\tURL.revokeObjectURL(oldSrc);\r\n}\r\n"
+        },
+        {
+          "id": 5,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+          "name": "./components/index.js",
+          "index": 5,
+          "index2": 18,
+          "size": 124,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "profile": {
+            "factory": 23,
+            "building": 17
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+              "module": "./app.js",
+              "moduleName": "./app.js",
+              "type": "cjs require",
+              "userRequest": "./components/",
+              "loc": "2:24-48"
+            }
+          ],
+          "source": "module.exports = {\r\n  week : require('./views/week-view.js'),\r\n  weekModel : require('./viewmodels/week-viewmodel.js')\r\n};\r\n"
+        },
+        {
+          "id": 6,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+          "name": "./components/views/week-view.js",
+          "index": 6,
+          "index2": 12,
+          "size": 1237,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+          "profile": {
+            "factory": 1119,
+            "building": 145
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+              "module": "./components/index.js",
+              "moduleName": "./components/index.js",
+              "type": "cjs require",
+              "userRequest": "./views/week-view.js",
+              "loc": "2:9-40"
+            }
+          ],
+          "source": "require('./../styles/weekstyle.scss');\r\nvar Day = require('./day-view');\r\n\r\nfunction Week(content) {\r\n  let container = document.createElement('div');\r\n\r\n  container.innerHTML = `\r\n<div class=\"calendar-week\">\r\n  <div class=\"head\">\r\n    <div class=\"header\"><span>Hour</span></div>\r\n    <div class=\"header\"><span>Monday</span></div>\r\n    <div class=\"header\"><span>Tuesday</span></div>\r\n    <div class=\"header\"><span>Wednesday</span></div>\r\n    <div class=\"header\"><span>Thursday</span></div>\r\n    <div class=\"header\"><span>Friday</span></div>\r\n    <div class=\"header\"><span>Saturday</span></div>\r\n    <div class=\"header\"><span>Sunday</span></div>\r\n  </div>\r\n  <div class=\"body\">\r\n  </div>\r\n</div>\r\n`;\r\n  let body = container.querySelector('.body');\r\n  let hoursList = document.createElement('ul');\r\n\r\n  for (let i = 1; i <= 24; i ++) {\r\n    hoursList.innerHTML += `\r\n    <li class=\"hour hour-number\">${i}</li>\r\n    `;\r\n  }\r\n  let hours = document.createElement('div');\r\n  hours.classList.add('day-wrapper');\r\n  hours.appendChild(hoursList);\r\n  body.appendChild(hours);\r\n\r\n  for (let i = 0; i < 7; i++) {\r\n    container.querySelector('.body').appendChild(new Day(content.days[i]));\r\n  }\r\n\r\n  return container;\r\n}\r\n\r\nmodule.exports = Week;\r\n"
+        },
+        {
+          "id": 7,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "name": "./components/styles/weekstyle.scss",
+          "index": 7,
+          "index2": 5,
+          "size": 1120,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+          "profile": {
+            "factory": 21,
+            "building": 4,
+            "dependencies": 4
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 6,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+              "module": "./components/views/week-view.js",
+              "moduleName": "./components/views/week-view.js",
+              "type": "cjs require",
+              "userRequest": "./../styles/weekstyle.scss",
+              "loc": "1:0-37"
+            }
+          ],
+          "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+        },
+        {
+          "id": 8,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+          "index": 8,
+          "index2": 4,
+          "size": 2346,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "profile": {
+            "factory": 2,
+            "building": 82,
+            "dependencies": 2
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 7,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+              "module": "./components/styles/weekstyle.scss",
+              "moduleName": "./components/styles/weekstyle.scss",
+              "type": "cjs require",
+              "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss",
+              "loc": "4:14-146"
+            }
+          ],
+          "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".flex-container, .calendar-week .head, .calendar-week .body {\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: center; }\\n\\n.calendar-week {\\n  width: 90%;\\n  height: 90%;\\n  margin: 0 auto;\\n  border: 1px solid #072100; }\\n  .calendar-week .head, .calendar-week .body {\\n    border-bottom: 1px solid #072100; }\\n    .calendar-week .head .header, .calendar-week .head .day-wrapper, .calendar-week .body .header, .calendar-week .body .day-wrapper {\\n      width: 13%;\\n      flex-basis: 300px;\\n      border-left: 1px solid #072100;\\n      text-align: center; }\\n    .calendar-week .head .header:first-child, .calendar-week .head .day-wrapper:first-child, .calendar-week .body .header:first-child, .calendar-week .body .day-wrapper:first-child {\\n      max-width: 55px;\\n      min-width: 55px;\\n      border: none; }\\n  .calendar-week .head {\\n    background-color: #e2ffdb; }\\n  .calendar-week .body {\\n    border: none; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/weekstyle.scss\"],\"names\":[],\"mappings\":\"AAEA;EACE,cAAc;EACd,oBAAoB;EACpB,wBAAwB,EACzB;;AAED;EACE,WAAW;EACX,YAAY;EACZ,eAAe;EACf,0BAZ6B,EAkC9B;EA1BD;IAOI,iCAf2B,EA2B5B;IAnBH;MASM,WAAW;MACX,kBAAkB;MAClB,+BAnByB;MAoBzB,mBAAmB,EACpB;IAbL;MAeM,gBAAgB;MAChB,gBAAgB;MAChB,aAAa,EACd;EAlBL;IAqBI,0BAA0B,EAC3B;EAtBH;IAwBI,aAAa,EACd\",\"file\":\"weekstyle.scss\",\"sourcesContent\":[\"$calendar-border-color: #072100;\\r\\n\\r\\n.flex-container {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\n.calendar-week {\\r\\n  width: 90%;\\r\\n  height: 90%;\\r\\n  margin: 0 auto;\\r\\n  border: 1px solid $calendar-border-color;\\r\\n  .head, .body {\\r\\n    @extend .flex-container;\\r\\n    border-bottom: 1px solid $calendar-border-color;\\r\\n    .header, .day-wrapper {\\r\\n      width: 13%;\\r\\n      flex-basis: 300px;\\r\\n      border-left: 1px solid $calendar-border-color;\\r\\n      text-align: center;\\r\\n    }\\r\\n    .header:first-child, .day-wrapper:first-child {\\r\\n      max-width: 55px;\\r\\n      min-width: 55px;\\r\\n      border: none;\\r\\n    }\\r\\n  }\\r\\n  .head {\\r\\n    background-color: #e2ffdb;\\r\\n  }\\r\\n  .body {\\r\\n    border: none;\\r\\n  }\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+        },
+        {
+          "id": 9,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+          "name": "./components/views/day-view.js",
+          "index": 9,
+          "index2": 11,
+          "size": 435,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+          "profile": {
+            "factory": 20,
+            "building": 33
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 6,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+              "module": "./components/views/week-view.js",
+              "moduleName": "./components/views/week-view.js",
+              "type": "cjs require",
+              "userRequest": "./day-view",
+              "loc": "2:10-31"
+            }
+          ],
+          "source": "require('./../styles/daystyle.scss');\r\nvar Hour = require('./hour-view');\r\n\r\nfunction DayView(context) {\r\n  var container = document.createElement('div');\r\n  hoursList = document.createElement('ul');\r\n\r\n  for (let i = 1; i <=24; i++) {\r\n    hoursList.appendChild(new Hour(context.hours[i-1]));\r\n  }\r\n\r\n  container.appendChild(hoursList);\r\n  container.classList.add('day-wrapper');\r\n  return container;\r\n}\r\n\r\nmodule.exports = DayView;\r\n"
+        },
+        {
+          "id": 10,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "name": "./components/styles/daystyle.scss",
+          "index": 10,
+          "index2": 7,
+          "size": 1117,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+          "profile": {
+            "factory": 7,
+            "building": 6,
+            "dependencies": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 9,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+              "module": "./components/views/day-view.js",
+              "moduleName": "./components/views/day-view.js",
+              "type": "cjs require",
+              "userRequest": "./../styles/daystyle.scss",
+              "loc": "1:0-36"
+            }
+          ],
+          "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+        },
+        {
+          "id": 11,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+          "index": 11,
+          "index2": 6,
+          "size": 525,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "profile": {
+            "factory": 1,
+            "building": 86,
+            "dependencies": 0
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 10,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+              "module": "./components/styles/daystyle.scss",
+              "moduleName": "./components/styles/daystyle.scss",
+              "type": "cjs require",
+              "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss",
+              "loc": "4:14-145"
+            }
+          ],
+          "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".day-wrapper ul {\\n  list-style: none;\\n  margin: 0;\\n  padding: 0; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/daystyle.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,iBAAiB;EACjB,UAAU;EACV,WAAW,EACZ\",\"file\":\"daystyle.scss\",\"sourcesContent\":[\".day-wrapper ul {\\r\\n  list-style: none;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+        },
+        {
+          "id": 12,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+          "name": "./components/views/hour-view.js",
+          "index": 12,
+          "index2": 10,
+          "size": 608,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+          "profile": {
+            "factory": 15,
+            "building": 66
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 9,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+              "module": "./components/views/day-view.js",
+              "moduleName": "./components/views/day-view.js",
+              "type": "cjs require",
+              "userRequest": "./hour-view",
+              "loc": "2:11-33"
+            }
+          ],
+          "source": "require('./../styles/hourstyle.scss');\r\n\r\nfunction HourView(context) {\r\n  var container = document.createElement('li');\r\n  var caption = document.createElement('h6');\r\n  var text = document.createElement('p');\r\n\r\n  container.classList.add('hour');\r\n  caption.classList.add('caption');\r\n  text.classList.add('text');\r\n\r\n  if (context.data.caption) {\r\n    container.classList.add('has-note');\r\n  }\r\n\r\n  caption.innerText = context.data.caption;\r\n  text.innerText = context.data.text;\r\n\r\n  container.appendChild(caption);\r\n  container.appendChild(text);\r\n\r\n  return container;\r\n}\r\n\r\nmodule.exports = HourView;\r\n"
+        },
+        {
+          "id": 13,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "name": "./components/styles/hourstyle.scss",
+          "index": 13,
+          "index2": 9,
+          "size": 1120,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+          "profile": {
+            "factory": 2,
+            "building": 2,
+            "dependencies": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 12,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+              "module": "./components/views/hour-view.js",
+              "moduleName": "./components/views/hour-view.js",
+              "type": "cjs require",
+              "userRequest": "./../styles/hourstyle.scss",
+              "loc": "1:0-37"
+            }
+          ],
+          "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+        },
+        {
+          "id": 14,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+          "index": 14,
+          "index2": 8,
+          "size": 1968,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "profile": {
+            "factory": 1,
+            "building": 40,
+            "dependencies": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 13,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+              "module": "./components/styles/hourstyle.scss",
+              "moduleName": "./components/styles/hourstyle.scss",
+              "type": "cjs require",
+              "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss",
+              "loc": "4:14-146"
+            }
+          ],
+          "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".hour {\\n  border-bottom: 1px solid black;\\n  box-sizing: border-box;\\n  min-height: 1.72em; }\\n  .hour .dots, .hour .caption, .hour .text {\\n    white-space: nowrap;\\n    text-overflow: ellipsis;\\n    overflow: hidden; }\\n  .hour .zeroIndent, .hour .caption, .hour .text {\\n    margin: 0;\\n    padding: 0; }\\n  .hour .caption {\\n    color: #2a0505;\\n    font-weight: bold;\\n    font-style: italic; }\\n  .hour .text {\\n    color: #01062f;\\n    font-size: 0.55em; }\\n  .hour:last-child {\\n    border: none; }\\n\\n.hour-number {\\n  background-color: #d0edff; }\\n\\n.has-note {\\n  background-color: #c2c8f9; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/hourstyle.scss\"],\"names\":[],\"mappings\":\"AAEA;EACE,+BAA+B;EAC/B,uBAAuB;EACvB,mBALa,EAkCd;EAhCD;IAMI,oBAAoB;IACpB,wBAAwB;IACxB,iBAAiB,EAClB;EATH;IAYI,UAAU;IACV,WAAW,EACZ;EAdH;IAkBI,eAAe;IACf,kBAAkB;IAClB,mBAAmB,EACpB;EArBH;IAyBI,eAAe;IACf,kBAAkB,EACnB;EA3BH;IA8BI,aAAa,EACd;;AAEH;EACE,0BAA0B,EAC3B;;AACD;EACE,0BAA0B,EAC3B\",\"file\":\"hourstyle.scss\",\"sourcesContent\":[\"$height: 0.55em + 0.67em + 0.5em;\\r\\n\\r\\n.hour{\\r\\n  border-bottom: 1px solid black;\\r\\n  box-sizing: border-box;\\r\\n  min-height: $height;\\r\\n\\r\\n  .dots {\\r\\n    white-space: nowrap;\\r\\n    text-overflow: ellipsis;\\r\\n    overflow: hidden;\\r\\n  }\\r\\n\\r\\n  .zeroIndent {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n  }\\r\\n  .caption {\\r\\n    @extend .zeroIndent;\\r\\n    @extend .dots;\\r\\n    color: #2a0505;\\r\\n    font-weight: bold;\\r\\n    font-style: italic;\\r\\n  }\\r\\n  .text {\\r\\n    @extend .zeroIndent;\\r\\n    @extend .dots;\\r\\n    color: #01062f;\\r\\n    font-size: 0.55em;\\r\\n  }\\r\\n\\r\\n  &:last-child {\\r\\n    border: none;\\r\\n  }\\r\\n}\\r\\n.hour-number {\\r\\n  background-color: #d0edff;\\r\\n}\\r\\n.has-note {\\r\\n  background-color: #c2c8f9;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+        },
+        {
+          "id": 15,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+          "name": "./components/viewmodels/week-viewmodel.js",
+          "index": 15,
+          "index2": 17,
+          "size": 278,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+          "profile": {
+            "factory": 1120,
+            "building": 16
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 5,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+              "module": "./components/index.js",
+              "moduleName": "./components/index.js",
+              "type": "cjs require",
+              "userRequest": "./viewmodels/week-viewmodel.js",
+              "loc": "3:14-55"
+            }
+          ],
+          "source": "var Day = require('./day-viewmodel');\r\n\r\nclass WeekModel {\r\n  constructor(weekNumber = 1){\r\n    this.weekNumber = weekNumber;\r\n    this.days = [];\r\n    for (let i = 0; i < 7; i++) {\r\n      this.days.push(new Day(weekNumber, i+1));\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = WeekModel;\r\n"
+        },
+        {
+          "id": 16,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "name": "./components/viewmodels/day-viewmodel.js",
+          "index": 16,
+          "index2": 16,
+          "size": 684,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+          "profile": {
+            "factory": 133,
+            "building": 27
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 15,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+              "module": "./components/viewmodels/week-viewmodel.js",
+              "moduleName": "./components/viewmodels/week-viewmodel.js",
+              "type": "cjs require",
+              "userRequest": "./day-viewmodel",
+              "loc": "1:10-36"
+            }
+          ],
+          "source": "var Hour = require('./hour-viewmodel');\r\nvar notesList = require('./../data/notesList');\r\nvar Note = require('./../models/note');\r\n\r\nclass DayModel {\r\n\r\n  constructor(weekNumber = 1, dayNumber = 1){\r\n    this.hours = [];\r\n    let notesByHour = {};\r\n\r\n    if (notesList['week' + weekNumber]) {\r\n      if (notesList['week' + weekNumber]['day' + dayNumber]) {\r\n        notesList['week' + weekNumber]['day' + dayNumber].notes.forEach(note => {\r\n          notesByHour['hour' + note.hour] = new Note(note.caption, note.text);\r\n        });\r\n      }\r\n    }\r\n\r\n    for (let i = 1; i <= 24; i++) {\r\n      this.hours.push(new Hour(notesByHour, i));\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = DayModel;\r\n"
+        },
+        {
+          "id": 17,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\hour-viewmodel.js",
+          "name": "./components/viewmodels/hour-viewmodel.js",
+          "index": 17,
+          "index2": 14,
+          "size": 341,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "profile": {
+            "factory": 24,
+            "building": 70,
+            "dependencies": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 16,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+              "module": "./components/viewmodels/day-viewmodel.js",
+              "moduleName": "./components/viewmodels/day-viewmodel.js",
+              "type": "cjs require",
+              "userRequest": "./hour-viewmodel",
+              "loc": "1:11-38"
+            }
+          ],
+          "source": "var Note = require('./../models/note.js');\r\n\r\nclass HourModel {\r\n  constructor(context = {}, hour) {\r\n    this.hour = hour;\r\n    if (context['hour' + hour]) {\r\n      this.data = new Note(context['hour' + hour].caption, context['hour' + hour].text);\r\n    } else {\r\n      this.data = new Note();\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = HourModel;\r\n"
+        },
+        {
+          "id": 18,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\models\\note.js",
+          "name": "./components/models/note.js",
+          "index": 18,
+          "index2": 13,
+          "size": 143,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "profile": {
+            "factory": 25,
+            "building": 71
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 16,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+              "module": "./components/viewmodels/day-viewmodel.js",
+              "moduleName": "./components/viewmodels/day-viewmodel.js",
+              "type": "cjs require",
+              "userRequest": "./../models/note",
+              "loc": "3:11-38"
+            },
+            {
+              "moduleId": 17,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\hour-viewmodel.js",
+              "module": "./components/viewmodels/hour-viewmodel.js",
+              "moduleName": "./components/viewmodels/hour-viewmodel.js",
+              "type": "cjs require",
+              "userRequest": "./../models/note.js",
+              "loc": "1:11-41"
+            }
+          ],
+          "source": "class Note {\r\n  constructor (caption = '', text = '') {\r\n    this.caption = caption;\r\n    this.text = text;\r\n  }\r\n}\r\n\r\nmodule.exports = Note;\r\n"
+        },
+        {
+          "id": 19,
+          "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\data\\notesList.js",
+          "name": "./components/data/notesList.js",
+          "index": 19,
+          "index2": 15,
+          "size": 586,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "profile": {
+            "factory": 25,
+            "building": 70
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 16,
+              "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+              "module": "./components/viewmodels/day-viewmodel.js",
+              "moduleName": "./components/viewmodels/day-viewmodel.js",
+              "type": "cjs require",
+              "userRequest": "./../data/notesList",
+              "loc": "2:16-46"
+            }
+          ],
+          "source": "var notesList = {\r\n  week1 : {\r\n    day1 : {\r\n      notes : [\r\n        {\r\n          hour : 7,\r\n          caption : 'note 1',\r\n          text : \"Create task with very long text content for test column width\"\r\n        }\r\n      ]\r\n    },\r\n    day3 : {\r\n      notes : [\r\n        {\r\n          hour : 15,\r\n          caption : 'note 1',\r\n          text : \"Complete task\"\r\n        }\r\n      ]\r\n    },\r\n    day5 : {\r\n      notes : [\r\n        {\r\n          hour : 19,\r\n          caption : 'note 1',\r\n          text : \"Send work\"\r\n        }\r\n      ]\r\n    },\r\n  }\r\n};\r\n\r\nmodule.exports = notesList;\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "moduleName": "./app.js",
+          "loc": "",
+          "name": "main",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+      "name": "./app.js",
+      "index": 0,
+      "index2": 19,
+      "size": 192,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 23,
+        "building": 40
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "require('./components/styles/app.scss');\r\nvar {week, weekModel} = require('./components/');\r\n\r\nwindow.addEventListener('load', ()=>{\r\n document.body.appendChild(week(new weekModel(1)));\r\n});\r\n"
+    },
+    {
+      "id": 1,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+      "name": "./components/styles/app.scss",
+      "index": 1,
+      "index2": 3,
+      "size": 1102,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+      "profile": {
+        "factory": 48,
+        "building": 48
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "module": "./app.js",
+          "moduleName": "./app.js",
+          "type": "cjs require",
+          "userRequest": "./components/styles/app.scss",
+          "loc": "1:0-39"
+        }
+      ],
+      "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+    },
+    {
+      "id": 2,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+      "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+      "index": 2,
+      "index2": 1,
+      "size": 751,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+      "profile": {
+        "factory": 3,
+        "building": 1196
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "module": "./components/styles/app.scss",
+          "moduleName": "./components/styles/app.scss",
+          "type": "cjs require",
+          "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./app.scss",
+          "loc": "4:14-140"
+        }
+      ],
+      "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \"html, body {\\n  margin: 0;\\n  padding: 0; }\\n\\nbody {\\n  height: 100%;\\n  min-width: 800px;\\n  padding-top: 20px;\\n  font: 16px Arial, Helvetica, sans-serif; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/app.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,UAAU;EACV,WAAW,EACZ;;AACD;EACE,aAAa;EACb,iBAAiB;EACjB,kBAAkB;EAClB,wCAAwC,EACzC\",\"file\":\"app.scss\",\"sourcesContent\":[\"html, body {\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\nbody {\\r\\n  height: 100%;\\r\\n  min-width: 800px;\\r\\n  padding-top: 20px;\\r\\n  font: 16px Arial, Helvetica, sans-serif;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+    },
+    {
+      "id": 3,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\lib\\css-base.js",
+      "name": "./~/css-loader/lib/css-base.js",
+      "index": 3,
+      "index2": 0,
+      "size": 1506,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+      "profile": {
+        "factory": 17,
+        "building": 42
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+          "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/app.scss",
+          "type": "cjs require",
+          "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+          "loc": "1:27-85"
+        },
+        {
+          "moduleId": 8,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+          "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+          "type": "cjs require",
+          "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+          "loc": "1:27-85"
+        },
+        {
+          "moduleId": 11,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+          "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+          "type": "cjs require",
+          "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+          "loc": "1:27-85"
+        },
+        {
+          "moduleId": 14,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "module": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+          "moduleName": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+          "type": "cjs require",
+          "userRequest": "./../../node_modules/css-loader/lib/css-base.js",
+          "loc": "1:27-85"
+        }
+      ],
+      "source": "/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n\tAuthor Tobias Koppers @sokra\r\n*/\r\n// css base code, injected by the css-loader\r\nmodule.exports = function() {\r\n\tvar list = [];\r\n\r\n\t// return the list of modules as css string\r\n\tlist.toString = function toString() {\r\n\t\tvar result = [];\r\n\t\tfor(var i = 0; i < this.length; i++) {\r\n\t\t\tvar item = this[i];\r\n\t\t\tif(item[2]) {\r\n\t\t\t\tresult.push(\"@media \" + item[2] + \"{\" + item[1] + \"}\");\r\n\t\t\t} else {\r\n\t\t\t\tresult.push(item[1]);\r\n\t\t\t}\r\n\t\t}\r\n\t\treturn result.join(\"\");\r\n\t};\r\n\r\n\t// import a list of modules into the list\r\n\tlist.i = function(modules, mediaQuery) {\r\n\t\tif(typeof modules === \"string\")\r\n\t\t\tmodules = [[null, modules, \"\"]];\r\n\t\tvar alreadyImportedModules = {};\r\n\t\tfor(var i = 0; i < this.length; i++) {\r\n\t\t\tvar id = this[i][0];\r\n\t\t\tif(typeof id === \"number\")\r\n\t\t\t\talreadyImportedModules[id] = true;\r\n\t\t}\r\n\t\tfor(i = 0; i < modules.length; i++) {\r\n\t\t\tvar item = modules[i];\r\n\t\t\t// skip already imported module\r\n\t\t\t// this implementation is not 100% perfect for weird media query combinations\r\n\t\t\t//  when a module is imported multiple times with different media queries.\r\n\t\t\t//  I hope this will never occur (Hey this way we have smaller bundles)\r\n\t\t\tif(typeof item[0] !== \"number\" || !alreadyImportedModules[item[0]]) {\r\n\t\t\t\tif(mediaQuery && !item[2]) {\r\n\t\t\t\t\titem[2] = mediaQuery;\r\n\t\t\t\t} else if(mediaQuery) {\r\n\t\t\t\t\titem[2] = \"(\" + item[2] + \") and (\" + mediaQuery + \")\";\r\n\t\t\t\t}\r\n\t\t\t\tlist.push(item);\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n\treturn list;\r\n};\r\n"
+    },
+    {
+      "id": 4,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\addStyles.js",
+      "name": "./~/style-loader/addStyles.js",
+      "index": 4,
+      "index2": 2,
+      "size": 7154,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+      "profile": {
+        "factory": 1065,
+        "building": 84
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\app.scss",
+          "module": "./components/styles/app.scss",
+          "moduleName": "./components/styles/app.scss",
+          "type": "cjs require",
+          "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+          "loc": "7:13-71"
+        },
+        {
+          "moduleId": 7,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "module": "./components/styles/weekstyle.scss",
+          "moduleName": "./components/styles/weekstyle.scss",
+          "type": "cjs require",
+          "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+          "loc": "7:13-71"
+        },
+        {
+          "moduleId": 10,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "module": "./components/styles/daystyle.scss",
+          "moduleName": "./components/styles/daystyle.scss",
+          "type": "cjs require",
+          "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+          "loc": "7:13-71"
+        },
+        {
+          "moduleId": 13,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "module": "./components/styles/hourstyle.scss",
+          "moduleName": "./components/styles/hourstyle.scss",
+          "type": "cjs require",
+          "userRequest": "!./../../node_modules/style-loader/addStyles.js",
+          "loc": "7:13-71"
+        }
+      ],
+      "source": "/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n\tAuthor Tobias Koppers @sokra\r\n*/\r\nvar stylesInDom = {},\r\n\tmemoize = function(fn) {\r\n\t\tvar memo;\r\n\t\treturn function () {\r\n\t\t\tif (typeof memo === \"undefined\") memo = fn.apply(this, arguments);\r\n\t\t\treturn memo;\r\n\t\t};\r\n\t},\r\n\tisOldIE = memoize(function() {\r\n\t\treturn /msie [6-9]\\b/.test(window.navigator.userAgent.toLowerCase());\r\n\t}),\r\n\tgetHeadElement = memoize(function () {\r\n\t\treturn document.head || document.getElementsByTagName(\"head\")[0];\r\n\t}),\r\n\tsingletonElement = null,\r\n\tsingletonCounter = 0,\r\n\tstyleElementsInsertedAtTop = [];\r\n\r\nmodule.exports = function(list, options) {\r\n\tif(typeof DEBUG !== \"undefined\" && DEBUG) {\r\n\t\tif(typeof document !== \"object\") throw new Error(\"The style-loader cannot be used in a non-browser environment\");\r\n\t}\r\n\r\n\toptions = options || {};\r\n\t// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\r\n\t// tags it will allow on a page\r\n\tif (typeof options.singleton === \"undefined\") options.singleton = isOldIE();\r\n\r\n\t// By default, add <style> tags to the bottom of <head>.\r\n\tif (typeof options.insertAt === \"undefined\") options.insertAt = \"bottom\";\r\n\r\n\tvar styles = listToStyles(list);\r\n\taddStylesToDom(styles, options);\r\n\r\n\treturn function update(newList) {\r\n\t\tvar mayRemove = [];\r\n\t\tfor(var i = 0; i < styles.length; i++) {\r\n\t\t\tvar item = styles[i];\r\n\t\t\tvar domStyle = stylesInDom[item.id];\r\n\t\t\tdomStyle.refs--;\r\n\t\t\tmayRemove.push(domStyle);\r\n\t\t}\r\n\t\tif(newList) {\r\n\t\t\tvar newStyles = listToStyles(newList);\r\n\t\t\taddStylesToDom(newStyles, options);\r\n\t\t}\r\n\t\tfor(var i = 0; i < mayRemove.length; i++) {\r\n\t\t\tvar domStyle = mayRemove[i];\r\n\t\t\tif(domStyle.refs === 0) {\r\n\t\t\t\tfor(var j = 0; j < domStyle.parts.length; j++)\r\n\t\t\t\t\tdomStyle.parts[j]();\r\n\t\t\t\tdelete stylesInDom[domStyle.id];\r\n\t\t\t}\r\n\t\t}\r\n\t};\r\n}\r\n\r\nfunction addStylesToDom(styles, options) {\r\n\tfor(var i = 0; i < styles.length; i++) {\r\n\t\tvar item = styles[i];\r\n\t\tvar domStyle = stylesInDom[item.id];\r\n\t\tif(domStyle) {\r\n\t\t\tdomStyle.refs++;\r\n\t\t\tfor(var j = 0; j < domStyle.parts.length; j++) {\r\n\t\t\t\tdomStyle.parts[j](item.parts[j]);\r\n\t\t\t}\r\n\t\t\tfor(; j < item.parts.length; j++) {\r\n\t\t\t\tdomStyle.parts.push(addStyle(item.parts[j], options));\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tvar parts = [];\r\n\t\t\tfor(var j = 0; j < item.parts.length; j++) {\r\n\t\t\t\tparts.push(addStyle(item.parts[j], options));\r\n\t\t\t}\r\n\t\t\tstylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfunction listToStyles(list) {\r\n\tvar styles = [];\r\n\tvar newStyles = {};\r\n\tfor(var i = 0; i < list.length; i++) {\r\n\t\tvar item = list[i];\r\n\t\tvar id = item[0];\r\n\t\tvar css = item[1];\r\n\t\tvar media = item[2];\r\n\t\tvar sourceMap = item[3];\r\n\t\tvar part = {css: css, media: media, sourceMap: sourceMap};\r\n\t\tif(!newStyles[id])\r\n\t\t\tstyles.push(newStyles[id] = {id: id, parts: [part]});\r\n\t\telse\r\n\t\t\tnewStyles[id].parts.push(part);\r\n\t}\r\n\treturn styles;\r\n}\r\n\r\nfunction insertStyleElement(options, styleElement) {\r\n\tvar head = getHeadElement();\r\n\tvar lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];\r\n\tif (options.insertAt === \"top\") {\r\n\t\tif(!lastStyleElementInsertedAtTop) {\r\n\t\t\thead.insertBefore(styleElement, head.firstChild);\r\n\t\t} else if(lastStyleElementInsertedAtTop.nextSibling) {\r\n\t\t\thead.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);\r\n\t\t} else {\r\n\t\t\thead.appendChild(styleElement);\r\n\t\t}\r\n\t\tstyleElementsInsertedAtTop.push(styleElement);\r\n\t} else if (options.insertAt === \"bottom\") {\r\n\t\thead.appendChild(styleElement);\r\n\t} else {\r\n\t\tthrow new Error(\"Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.\");\r\n\t}\r\n}\r\n\r\nfunction removeStyleElement(styleElement) {\r\n\tstyleElement.parentNode.removeChild(styleElement);\r\n\tvar idx = styleElementsInsertedAtTop.indexOf(styleElement);\r\n\tif(idx >= 0) {\r\n\t\tstyleElementsInsertedAtTop.splice(idx, 1);\r\n\t}\r\n}\r\n\r\nfunction createStyleElement(options) {\r\n\tvar styleElement = document.createElement(\"style\");\r\n\tstyleElement.type = \"text/css\";\r\n\tinsertStyleElement(options, styleElement);\r\n\treturn styleElement;\r\n}\r\n\r\nfunction createLinkElement(options) {\r\n\tvar linkElement = document.createElement(\"link\");\r\n\tlinkElement.rel = \"stylesheet\";\r\n\tinsertStyleElement(options, linkElement);\r\n\treturn linkElement;\r\n}\r\n\r\nfunction addStyle(obj, options) {\r\n\tvar styleElement, update, remove;\r\n\r\n\tif (options.singleton) {\r\n\t\tvar styleIndex = singletonCounter++;\r\n\t\tstyleElement = singletonElement || (singletonElement = createStyleElement(options));\r\n\t\tupdate = applyToSingletonTag.bind(null, styleElement, styleIndex, false);\r\n\t\tremove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);\r\n\t} else if(obj.sourceMap &&\r\n\t\ttypeof URL === \"function\" &&\r\n\t\ttypeof URL.createObjectURL === \"function\" &&\r\n\t\ttypeof URL.revokeObjectURL === \"function\" &&\r\n\t\ttypeof Blob === \"function\" &&\r\n\t\ttypeof btoa === \"function\") {\r\n\t\tstyleElement = createLinkElement(options);\r\n\t\tupdate = updateLink.bind(null, styleElement);\r\n\t\tremove = function() {\r\n\t\t\tremoveStyleElement(styleElement);\r\n\t\t\tif(styleElement.href)\r\n\t\t\t\tURL.revokeObjectURL(styleElement.href);\r\n\t\t};\r\n\t} else {\r\n\t\tstyleElement = createStyleElement(options);\r\n\t\tupdate = applyToTag.bind(null, styleElement);\r\n\t\tremove = function() {\r\n\t\t\tremoveStyleElement(styleElement);\r\n\t\t};\r\n\t}\r\n\r\n\tupdate(obj);\r\n\r\n\treturn function updateStyle(newObj) {\r\n\t\tif(newObj) {\r\n\t\t\tif(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)\r\n\t\t\t\treturn;\r\n\t\t\tupdate(obj = newObj);\r\n\t\t} else {\r\n\t\t\tremove();\r\n\t\t}\r\n\t};\r\n}\r\n\r\nvar replaceText = (function () {\r\n\tvar textStore = [];\r\n\r\n\treturn function (index, replacement) {\r\n\t\ttextStore[index] = replacement;\r\n\t\treturn textStore.filter(Boolean).join('\\n');\r\n\t};\r\n})();\r\n\r\nfunction applyToSingletonTag(styleElement, index, remove, obj) {\r\n\tvar css = remove ? \"\" : obj.css;\r\n\r\n\tif (styleElement.styleSheet) {\r\n\t\tstyleElement.styleSheet.cssText = replaceText(index, css);\r\n\t} else {\r\n\t\tvar cssNode = document.createTextNode(css);\r\n\t\tvar childNodes = styleElement.childNodes;\r\n\t\tif (childNodes[index]) styleElement.removeChild(childNodes[index]);\r\n\t\tif (childNodes.length) {\r\n\t\t\tstyleElement.insertBefore(cssNode, childNodes[index]);\r\n\t\t} else {\r\n\t\t\tstyleElement.appendChild(cssNode);\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfunction applyToTag(styleElement, obj) {\r\n\tvar css = obj.css;\r\n\tvar media = obj.media;\r\n\r\n\tif(media) {\r\n\t\tstyleElement.setAttribute(\"media\", media)\r\n\t}\r\n\r\n\tif(styleElement.styleSheet) {\r\n\t\tstyleElement.styleSheet.cssText = css;\r\n\t} else {\r\n\t\twhile(styleElement.firstChild) {\r\n\t\t\tstyleElement.removeChild(styleElement.firstChild);\r\n\t\t}\r\n\t\tstyleElement.appendChild(document.createTextNode(css));\r\n\t}\r\n}\r\n\r\nfunction updateLink(linkElement, obj) {\r\n\tvar css = obj.css;\r\n\tvar sourceMap = obj.sourceMap;\r\n\r\n\tif(sourceMap) {\r\n\t\t// http://stackoverflow.com/a/26603875\r\n\t\tcss += \"\\n/*# sourceMappingURL=data:application/json;base64,\" + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + \" */\";\r\n\t}\r\n\r\n\tvar blob = new Blob([css], { type: \"text/css\" });\r\n\r\n\tvar oldSrc = linkElement.href;\r\n\r\n\tlinkElement.href = URL.createObjectURL(blob);\r\n\r\n\tif(oldSrc)\r\n\t\tURL.revokeObjectURL(oldSrc);\r\n}\r\n"
+    },
+    {
+      "id": 5,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+      "name": "./components/index.js",
+      "index": 5,
+      "index2": 18,
+      "size": 124,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+      "profile": {
+        "factory": 23,
+        "building": 17
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\app.js",
+          "module": "./app.js",
+          "moduleName": "./app.js",
+          "type": "cjs require",
+          "userRequest": "./components/",
+          "loc": "2:24-48"
+        }
+      ],
+      "source": "module.exports = {\r\n  week : require('./views/week-view.js'),\r\n  weekModel : require('./viewmodels/week-viewmodel.js')\r\n};\r\n"
+    },
+    {
+      "id": 6,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+      "name": "./components/views/week-view.js",
+      "index": 6,
+      "index2": 12,
+      "size": 1237,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+      "profile": {
+        "factory": 1119,
+        "building": 145
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+          "module": "./components/index.js",
+          "moduleName": "./components/index.js",
+          "type": "cjs require",
+          "userRequest": "./views/week-view.js",
+          "loc": "2:9-40"
+        }
+      ],
+      "source": "require('./../styles/weekstyle.scss');\r\nvar Day = require('./day-view');\r\n\r\nfunction Week(content) {\r\n  let container = document.createElement('div');\r\n\r\n  container.innerHTML = `\r\n<div class=\"calendar-week\">\r\n  <div class=\"head\">\r\n    <div class=\"header\"><span>Hour</span></div>\r\n    <div class=\"header\"><span>Monday</span></div>\r\n    <div class=\"header\"><span>Tuesday</span></div>\r\n    <div class=\"header\"><span>Wednesday</span></div>\r\n    <div class=\"header\"><span>Thursday</span></div>\r\n    <div class=\"header\"><span>Friday</span></div>\r\n    <div class=\"header\"><span>Saturday</span></div>\r\n    <div class=\"header\"><span>Sunday</span></div>\r\n  </div>\r\n  <div class=\"body\">\r\n  </div>\r\n</div>\r\n`;\r\n  let body = container.querySelector('.body');\r\n  let hoursList = document.createElement('ul');\r\n\r\n  for (let i = 1; i <= 24; i ++) {\r\n    hoursList.innerHTML += `\r\n    <li class=\"hour hour-number\">${i}</li>\r\n    `;\r\n  }\r\n  let hours = document.createElement('div');\r\n  hours.classList.add('day-wrapper');\r\n  hours.appendChild(hoursList);\r\n  body.appendChild(hours);\r\n\r\n  for (let i = 0; i < 7; i++) {\r\n    container.querySelector('.body').appendChild(new Day(content.days[i]));\r\n  }\r\n\r\n  return container;\r\n}\r\n\r\nmodule.exports = Week;\r\n"
+    },
+    {
+      "id": 7,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+      "name": "./components/styles/weekstyle.scss",
+      "index": 7,
+      "index2": 5,
+      "size": 1120,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+      "profile": {
+        "factory": 21,
+        "building": 4,
+        "dependencies": 4
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 6,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+          "module": "./components/views/week-view.js",
+          "moduleName": "./components/views/week-view.js",
+          "type": "cjs require",
+          "userRequest": "./../styles/weekstyle.scss",
+          "loc": "1:0-37"
+        }
+      ],
+      "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+    },
+    {
+      "id": 8,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+      "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/weekstyle.scss",
+      "index": 8,
+      "index2": 4,
+      "size": 2346,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+      "profile": {
+        "factory": 2,
+        "building": 82,
+        "dependencies": 2
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 7,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\weekstyle.scss",
+          "module": "./components/styles/weekstyle.scss",
+          "moduleName": "./components/styles/weekstyle.scss",
+          "type": "cjs require",
+          "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./weekstyle.scss",
+          "loc": "4:14-146"
+        }
+      ],
+      "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".flex-container, .calendar-week .head, .calendar-week .body {\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: center; }\\n\\n.calendar-week {\\n  width: 90%;\\n  height: 90%;\\n  margin: 0 auto;\\n  border: 1px solid #072100; }\\n  .calendar-week .head, .calendar-week .body {\\n    border-bottom: 1px solid #072100; }\\n    .calendar-week .head .header, .calendar-week .head .day-wrapper, .calendar-week .body .header, .calendar-week .body .day-wrapper {\\n      width: 13%;\\n      flex-basis: 300px;\\n      border-left: 1px solid #072100;\\n      text-align: center; }\\n    .calendar-week .head .header:first-child, .calendar-week .head .day-wrapper:first-child, .calendar-week .body .header:first-child, .calendar-week .body .day-wrapper:first-child {\\n      max-width: 55px;\\n      min-width: 55px;\\n      border: none; }\\n  .calendar-week .head {\\n    background-color: #e2ffdb; }\\n  .calendar-week .body {\\n    border: none; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/weekstyle.scss\"],\"names\":[],\"mappings\":\"AAEA;EACE,cAAc;EACd,oBAAoB;EACpB,wBAAwB,EACzB;;AAED;EACE,WAAW;EACX,YAAY;EACZ,eAAe;EACf,0BAZ6B,EAkC9B;EA1BD;IAOI,iCAf2B,EA2B5B;IAnBH;MASM,WAAW;MACX,kBAAkB;MAClB,+BAnByB;MAoBzB,mBAAmB,EACpB;IAbL;MAeM,gBAAgB;MAChB,gBAAgB;MAChB,aAAa,EACd;EAlBL;IAqBI,0BAA0B,EAC3B;EAtBH;IAwBI,aAAa,EACd\",\"file\":\"weekstyle.scss\",\"sourcesContent\":[\"$calendar-border-color: #072100;\\r\\n\\r\\n.flex-container {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  justify-content: center;\\r\\n}\\r\\n\\r\\n.calendar-week {\\r\\n  width: 90%;\\r\\n  height: 90%;\\r\\n  margin: 0 auto;\\r\\n  border: 1px solid $calendar-border-color;\\r\\n  .head, .body {\\r\\n    @extend .flex-container;\\r\\n    border-bottom: 1px solid $calendar-border-color;\\r\\n    .header, .day-wrapper {\\r\\n      width: 13%;\\r\\n      flex-basis: 300px;\\r\\n      border-left: 1px solid $calendar-border-color;\\r\\n      text-align: center;\\r\\n    }\\r\\n    .header:first-child, .day-wrapper:first-child {\\r\\n      max-width: 55px;\\r\\n      min-width: 55px;\\r\\n      border: none;\\r\\n    }\\r\\n  }\\r\\n  .head {\\r\\n    background-color: #e2ffdb;\\r\\n  }\\r\\n  .body {\\r\\n    border: none;\\r\\n  }\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+    },
+    {
+      "id": 9,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+      "name": "./components/views/day-view.js",
+      "index": 9,
+      "index2": 11,
+      "size": 435,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+      "profile": {
+        "factory": 20,
+        "building": 33
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 6,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\week-view.js",
+          "module": "./components/views/week-view.js",
+          "moduleName": "./components/views/week-view.js",
+          "type": "cjs require",
+          "userRequest": "./day-view",
+          "loc": "2:10-31"
+        }
+      ],
+      "source": "require('./../styles/daystyle.scss');\r\nvar Hour = require('./hour-view');\r\n\r\nfunction DayView(context) {\r\n  var container = document.createElement('div');\r\n  hoursList = document.createElement('ul');\r\n\r\n  for (let i = 1; i <=24; i++) {\r\n    hoursList.appendChild(new Hour(context.hours[i-1]));\r\n  }\r\n\r\n  container.appendChild(hoursList);\r\n  container.classList.add('day-wrapper');\r\n  return container;\r\n}\r\n\r\nmodule.exports = DayView;\r\n"
+    },
+    {
+      "id": 10,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+      "name": "./components/styles/daystyle.scss",
+      "index": 10,
+      "index2": 7,
+      "size": 1117,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+      "profile": {
+        "factory": 7,
+        "building": 6,
+        "dependencies": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 9,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+          "module": "./components/views/day-view.js",
+          "moduleName": "./components/views/day-view.js",
+          "type": "cjs require",
+          "userRequest": "./../styles/daystyle.scss",
+          "loc": "1:0-36"
+        }
+      ],
+      "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+    },
+    {
+      "id": 11,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+      "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/daystyle.scss",
+      "index": 11,
+      "index2": 6,
+      "size": 525,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+      "profile": {
+        "factory": 1,
+        "building": 86,
+        "dependencies": 0
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 10,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\daystyle.scss",
+          "module": "./components/styles/daystyle.scss",
+          "moduleName": "./components/styles/daystyle.scss",
+          "type": "cjs require",
+          "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./daystyle.scss",
+          "loc": "4:14-145"
+        }
+      ],
+      "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".day-wrapper ul {\\n  list-style: none;\\n  margin: 0;\\n  padding: 0; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/daystyle.scss\"],\"names\":[],\"mappings\":\"AAAA;EACE,iBAAiB;EACjB,UAAU;EACV,WAAW,EACZ\",\"file\":\"daystyle.scss\",\"sourcesContent\":[\".day-wrapper ul {\\r\\n  list-style: none;\\r\\n  margin: 0;\\r\\n  padding: 0;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+    },
+    {
+      "id": 12,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+      "name": "./components/views/hour-view.js",
+      "index": 12,
+      "index2": 10,
+      "size": 608,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+      "profile": {
+        "factory": 15,
+        "building": 66
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 9,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\day-view.js",
+          "module": "./components/views/day-view.js",
+          "moduleName": "./components/views/day-view.js",
+          "type": "cjs require",
+          "userRequest": "./hour-view",
+          "loc": "2:11-33"
+        }
+      ],
+      "source": "require('./../styles/hourstyle.scss');\r\n\r\nfunction HourView(context) {\r\n  var container = document.createElement('li');\r\n  var caption = document.createElement('h6');\r\n  var text = document.createElement('p');\r\n\r\n  container.classList.add('hour');\r\n  caption.classList.add('caption');\r\n  text.classList.add('text');\r\n\r\n  if (context.data.caption) {\r\n    container.classList.add('has-note');\r\n  }\r\n\r\n  caption.innerText = context.data.caption;\r\n  text.innerText = context.data.text;\r\n\r\n  container.appendChild(caption);\r\n  container.appendChild(text);\r\n\r\n  return container;\r\n}\r\n\r\nmodule.exports = HourView;\r\n"
+    },
+    {
+      "id": 13,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+      "name": "./components/styles/hourstyle.scss",
+      "index": 13,
+      "index2": 9,
+      "size": 1120,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+      "profile": {
+        "factory": 2,
+        "building": 2,
+        "dependencies": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 12,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\views\\hour-view.js",
+          "module": "./components/views/hour-view.js",
+          "moduleName": "./components/views/hour-view.js",
+          "type": "cjs require",
+          "userRequest": "./../styles/hourstyle.scss",
+          "loc": "1:0-37"
+        }
+      ],
+      "source": "// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\");\nif(typeof content === 'string') content = [[module.id, content, '']];\n// add the styles to the DOM\nvar update = require(\"!./../../node_modules/style-loader/addStyles.js\")(content, {});\nif(content.locals) module.exports = content.locals;\n// Hot Module Replacement\nif(module.hot) {\n\t// When the styles change, update the <style> tags\n\tif(!content.locals) {\n\t\tmodule.hot.accept(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\", function() {\n\t\t\tvar newContent = require(\"!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss\");\n\t\t\tif(typeof newContent === 'string') newContent = [[module.id, newContent, '']];\n\t\t\tupdate(newContent);\n\t\t});\n\t}\n\t// When the module is disposed, remove the <style> tags\n\tmodule.hot.dispose(function() { update(); });\n}"
+    },
+    {
+      "id": 14,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+      "name": "./~/css-loader?sourceMap!./~/sass-loader?sourceMap!./components/styles/hourstyle.scss",
+      "index": 14,
+      "index2": 8,
+      "size": 1968,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+      "profile": {
+        "factory": 1,
+        "building": 40,
+        "dependencies": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 13,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\style-loader\\index.js!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\css-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\node_modules\\sass-loader\\index.js?sourceMap!D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\styles\\hourstyle.scss",
+          "module": "./components/styles/hourstyle.scss",
+          "moduleName": "./components/styles/hourstyle.scss",
+          "type": "cjs require",
+          "userRequest": "!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/sass-loader/index.js?sourceMap!./hourstyle.scss",
+          "loc": "4:14-146"
+        }
+      ],
+      "source": "exports = module.exports = require(\"./../../node_modules/css-loader/lib/css-base.js\")();\n// imports\n\n\n// module\nexports.push([module.id, \".hour {\\n  border-bottom: 1px solid black;\\n  box-sizing: border-box;\\n  min-height: 1.72em; }\\n  .hour .dots, .hour .caption, .hour .text {\\n    white-space: nowrap;\\n    text-overflow: ellipsis;\\n    overflow: hidden; }\\n  .hour .zeroIndent, .hour .caption, .hour .text {\\n    margin: 0;\\n    padding: 0; }\\n  .hour .caption {\\n    color: #2a0505;\\n    font-weight: bold;\\n    font-style: italic; }\\n  .hour .text {\\n    color: #01062f;\\n    font-size: 0.55em; }\\n  .hour:last-child {\\n    border: none; }\\n\\n.hour-number {\\n  background-color: #d0edff; }\\n\\n.has-note {\\n  background-color: #c2c8f9; }\\n\", \"\", {\"version\":3,\"sources\":[\"/./components/components/styles/hourstyle.scss\"],\"names\":[],\"mappings\":\"AAEA;EACE,+BAA+B;EAC/B,uBAAuB;EACvB,mBALa,EAkCd;EAhCD;IAMI,oBAAoB;IACpB,wBAAwB;IACxB,iBAAiB,EAClB;EATH;IAYI,UAAU;IACV,WAAW,EACZ;EAdH;IAkBI,eAAe;IACf,kBAAkB;IAClB,mBAAmB,EACpB;EArBH;IAyBI,eAAe;IACf,kBAAkB,EACnB;EA3BH;IA8BI,aAAa,EACd;;AAEH;EACE,0BAA0B,EAC3B;;AACD;EACE,0BAA0B,EAC3B\",\"file\":\"hourstyle.scss\",\"sourcesContent\":[\"$height: 0.55em + 0.67em + 0.5em;\\r\\n\\r\\n.hour{\\r\\n  border-bottom: 1px solid black;\\r\\n  box-sizing: border-box;\\r\\n  min-height: $height;\\r\\n\\r\\n  .dots {\\r\\n    white-space: nowrap;\\r\\n    text-overflow: ellipsis;\\r\\n    overflow: hidden;\\r\\n  }\\r\\n\\r\\n  .zeroIndent {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n  }\\r\\n  .caption {\\r\\n    @extend .zeroIndent;\\r\\n    @extend .dots;\\r\\n    color: #2a0505;\\r\\n    font-weight: bold;\\r\\n    font-style: italic;\\r\\n  }\\r\\n  .text {\\r\\n    @extend .zeroIndent;\\r\\n    @extend .dots;\\r\\n    color: #01062f;\\r\\n    font-size: 0.55em;\\r\\n  }\\r\\n\\r\\n  &:last-child {\\r\\n    border: none;\\r\\n  }\\r\\n}\\r\\n.hour-number {\\r\\n  background-color: #d0edff;\\r\\n}\\r\\n.has-note {\\r\\n  background-color: #c2c8f9;\\r\\n}\\r\\n\"],\"sourceRoot\":\"webpack://\"}]);\n\n// exports\n"
+    },
+    {
+      "id": 15,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+      "name": "./components/viewmodels/week-viewmodel.js",
+      "index": 15,
+      "index2": 17,
+      "size": 278,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+      "profile": {
+        "factory": 1120,
+        "building": 16
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 5,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\index.js",
+          "module": "./components/index.js",
+          "moduleName": "./components/index.js",
+          "type": "cjs require",
+          "userRequest": "./viewmodels/week-viewmodel.js",
+          "loc": "3:14-55"
+        }
+      ],
+      "source": "var Day = require('./day-viewmodel');\r\n\r\nclass WeekModel {\r\n  constructor(weekNumber = 1){\r\n    this.weekNumber = weekNumber;\r\n    this.days = [];\r\n    for (let i = 0; i < 7; i++) {\r\n      this.days.push(new Day(weekNumber, i+1));\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = WeekModel;\r\n"
+    },
+    {
+      "id": 16,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+      "name": "./components/viewmodels/day-viewmodel.js",
+      "index": 16,
+      "index2": 16,
+      "size": 684,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+      "profile": {
+        "factory": 133,
+        "building": 27
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 15,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\week-viewmodel.js",
+          "module": "./components/viewmodels/week-viewmodel.js",
+          "moduleName": "./components/viewmodels/week-viewmodel.js",
+          "type": "cjs require",
+          "userRequest": "./day-viewmodel",
+          "loc": "1:10-36"
+        }
+      ],
+      "source": "var Hour = require('./hour-viewmodel');\r\nvar notesList = require('./../data/notesList');\r\nvar Note = require('./../models/note');\r\n\r\nclass DayModel {\r\n\r\n  constructor(weekNumber = 1, dayNumber = 1){\r\n    this.hours = [];\r\n    let notesByHour = {};\r\n\r\n    if (notesList['week' + weekNumber]) {\r\n      if (notesList['week' + weekNumber]['day' + dayNumber]) {\r\n        notesList['week' + weekNumber]['day' + dayNumber].notes.forEach(note => {\r\n          notesByHour['hour' + note.hour] = new Note(note.caption, note.text);\r\n        });\r\n      }\r\n    }\r\n\r\n    for (let i = 1; i <= 24; i++) {\r\n      this.hours.push(new Hour(notesByHour, i));\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = DayModel;\r\n"
+    },
+    {
+      "id": 17,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\hour-viewmodel.js",
+      "name": "./components/viewmodels/hour-viewmodel.js",
+      "index": 17,
+      "index2": 14,
+      "size": 341,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+      "profile": {
+        "factory": 24,
+        "building": 70,
+        "dependencies": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 16,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "module": "./components/viewmodels/day-viewmodel.js",
+          "moduleName": "./components/viewmodels/day-viewmodel.js",
+          "type": "cjs require",
+          "userRequest": "./hour-viewmodel",
+          "loc": "1:11-38"
+        }
+      ],
+      "source": "var Note = require('./../models/note.js');\r\n\r\nclass HourModel {\r\n  constructor(context = {}, hour) {\r\n    this.hour = hour;\r\n    if (context['hour' + hour]) {\r\n      this.data = new Note(context['hour' + hour].caption, context['hour' + hour].text);\r\n    } else {\r\n      this.data = new Note();\r\n    }\r\n  }\r\n}\r\n\r\nmodule.exports = HourModel;\r\n"
+    },
+    {
+      "id": 18,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\models\\note.js",
+      "name": "./components/models/note.js",
+      "index": 18,
+      "index2": 13,
+      "size": 143,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+      "profile": {
+        "factory": 25,
+        "building": 71
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 16,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "module": "./components/viewmodels/day-viewmodel.js",
+          "moduleName": "./components/viewmodels/day-viewmodel.js",
+          "type": "cjs require",
+          "userRequest": "./../models/note",
+          "loc": "3:11-38"
+        },
+        {
+          "moduleId": 17,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\hour-viewmodel.js",
+          "module": "./components/viewmodels/hour-viewmodel.js",
+          "moduleName": "./components/viewmodels/hour-viewmodel.js",
+          "type": "cjs require",
+          "userRequest": "./../models/note.js",
+          "loc": "1:11-41"
+        }
+      ],
+      "source": "class Note {\r\n  constructor (caption = '', text = '') {\r\n    this.caption = caption;\r\n    this.text = text;\r\n  }\r\n}\r\n\r\nmodule.exports = Note;\r\n"
+    },
+    {
+      "id": 19,
+      "identifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\data\\notesList.js",
+      "name": "./components/data/notesList.js",
+      "index": 19,
+      "index2": 15,
+      "size": 586,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+      "profile": {
+        "factory": 25,
+        "building": 70
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 16,
+          "moduleIdentifier": "D:\\JS_courses\\Andrey-Zhiryakov-front-end-course\\webpack\\components\\viewmodels\\day-viewmodel.js",
+          "module": "./components/viewmodels/day-viewmodel.js",
+          "moduleName": "./components/viewmodels/day-viewmodel.js",
+          "type": "cjs require",
+          "userRequest": "./../data/notesList",
+          "loc": "2:16-46"
+        }
+      ],
+      "source": "var notesList = {\r\n  week1 : {\r\n    day1 : {\r\n      notes : [\r\n        {\r\n          hour : 7,\r\n          caption : 'note 1',\r\n          text : \"Create task with very long text content for test column width\"\r\n        }\r\n      ]\r\n    },\r\n    day3 : {\r\n      notes : [\r\n        {\r\n          hour : 15,\r\n          caption : 'note 1',\r\n          text : \"Complete task\"\r\n        }\r\n      ]\r\n    },\r\n    day5 : {\r\n      notes : [\r\n        {\r\n          hour : 19,\r\n          caption : 'note 1',\r\n          text : \"Send work\"\r\n        }\r\n      ]\r\n    },\r\n  }\r\n};\r\n\r\nmodule.exports = notesList;\r\n"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
