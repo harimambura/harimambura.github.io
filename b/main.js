@@ -17,6 +17,9 @@ function showPreview(src) {
 	preview.addEventListener('click', () => {
 		preview.classList.remove('show-preview');
 	});
+	preview.firstElementChild.addEventListener('mouseleave', () => {
+		preview.classList.remove('show-preview');
+	});
 }
 
 function addRow(photoUrls, data) {
