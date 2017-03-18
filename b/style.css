@@ -1,0 +1,24 @@
+.main {
+  width: 65%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.photo-cell {
+  border-right: 1px solid black;
+}
+
+.info-cell {
+  max-width: 800px;
+}
+
+table {
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid red;
+  border-radius: 7px;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
