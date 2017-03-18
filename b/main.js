@@ -47,11 +47,9 @@ function addRow(photoUrls, data) {
 	});
 
 	newRow.addEventListener('mouseleave', (e) => {
-		if (e.target.tagName === 'IMG') {
-			if (timeout) {
-				clearTimeout(timeout);
-				timeout = null;
-			}
+		if (timeout) {
+			clearTimeout(timeout);
+			timeout = null;
 		}
 	});
 }
