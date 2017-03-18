@@ -22,3 +22,24 @@ table {
 tr {
   border-bottom: 1px solid black;
 }
+
+#preview {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#preview img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	max-height: 800px;
+	max-width: 1200px;
+}
+
+.show-preview {
+	display: block;
+}

@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./main.js"></script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<script src="./main.js"></script>
 </head>
 
 <body>
-  <main class="main">
-    <form action="javascript:void(0);">
-      <label for="groupId">Group ID: </label><input type="text" id="groupId" value="50939110">
-      <button id="getRecords">Get 50 records</button>
-      <button id="getBelRecords">Get records from belarus</button>
-    </form>
-    <table>
-      <thead>
-        <tr>
-          <th class='photo-cell'>Photo</th>
-          <th class='info-cell'>Info</th>
-        </tr>
-      </thead>
-      <tbody id='tblBody'>
-      </tbody>
-    </table>
-  </main>
-  <script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
-  <script type="text/javascript">
-    VK.init({
-      apiId: 5814867
-    });
-  </script>
+	<main class="main">
+		<form action="javascript:void(0);">
+			<label for="groupId">Group ID: </label><input type="text" id="groupId" value="50939110">
+			<button id="getRecords">Get 50 records</button>
+			<button id="getBelRecords">Get records from belarus</button>
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th class='photo-cell'>Photo</th>
+					<th class='info-cell'>Info</th>
+				</tr>
+			</thead>
+			<tbody id='tblBody'>
+			</tbody>
+		</table>
+		<div id="preview">
+			<img src="#" alt="#">
+		</div>
+	</main>
+	<script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
+	<script type="text/javascript">
+		VK.init({
+			apiId: 5814867
+		});
+	</script>
 </body>
 
 </html>
