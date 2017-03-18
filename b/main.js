@@ -42,7 +42,7 @@ function addRow(photoUrls, data) {
 		if (e.target.tagName === 'IMG') {
 			timeout = setTimeout(function () {
 				showPreview(photoUrls.source);
-			}, 400);
+			}, 500);
 		}
 	});
 
