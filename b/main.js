@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
 		var groupId = document.getElementById('groupId').value;
 
 		getRecords(groupId, 50).then((data) => {
-			console.log(data);
+			// console.log(data);
 			if (data.response) {
 				var posts = data.response;
 				document.getElementById('tblBody').innerHTML = '';
@@ -74,6 +74,6 @@ window.addEventListener('load', () => {
 		});
 	});
 	document.getElementById('tblBody').addEventListener('mouseenter', (e) => {
-		console.log('somesing');
+		console.log(e);
 	});
 });
