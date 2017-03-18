@@ -41,5 +41,5 @@ tr {
 }
 
 .show-preview {
-	display: block;
+	display: block !important;
 }
