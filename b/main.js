@@ -73,7 +73,7 @@ window.addEventListener('load', () => {
 			}
 		});
 	});
-	document.getElementById('tblBody').addEventListener('mouseenter', (e) => {
+	document.getElementById('tblBody').addEventListener('mouseover', (e) => {
 		console.log(e);
 	});
 });
