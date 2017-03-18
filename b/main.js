@@ -13,9 +13,9 @@ function createTemplate() {
 function showPreview(src) {
 	var preview = document.getElementById('preview');
 	preview.firstElementChild.src = src;
-	preview.classList.toggle('show-preview');
+	preview.classList.add('show-preview');
 	preview.addEventListener('click', () => {
-		preview.classList.toggle('show-preview');
+		preview.classList.remove('show-preview');
 	});
 }
 
