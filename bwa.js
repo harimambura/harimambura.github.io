@@ -15,8 +15,7 @@
     }, _typeof(obj);
   }
 
-  var host = 'https://bwa.to';
-  var myhost = 'https://harimambura.github.io';
+  var host = 'https://harimambura.github.io';
   var framework = host + '/bwa'; // download and unzip https://bwa.pages.dev/latest.zip to my.host/bwa
 
   var plugins = ['s.js', 'o.js']; // s.js porn | o.js online
@@ -26,8 +25,8 @@
     Lampa.Utils.putScriptAsync(plugins.filter(function(u) {
       return (!window.bwajs_plugin && u == 'o.js') || (!window['plugin_sisi_pwa_ready'] && u == 's.js');
     }).map(function(u) {
-      console.log('BWA', myhost + '/plugins/' + u + plugins_version);
-      return myhost + '/plugins/' + u + plugins_version;
+      console.log('BWA', host + '/plugins/' + u + plugins_version);
+      return host + '/plugins/' + u + plugins_version;
     }), function() {});
   }
 
@@ -47,7 +46,7 @@
               //console.log('BWA', 'load: ' + name);
               return framework + '/' + name;
             }
-          }).then(function() {debugger;
+          }).then(function() {
             console.log('BWA', 'load complete');
             var net = new Lampa.Reguest();
             window.httpReq = function(url, post, params) {
@@ -62,10 +61,10 @@
             var check = function check(good) {
               try {
                 DotNet.invokeMethodAsync("JinEnergy", 'initial').then(function(initial) {
-                  if (initial) {debugger;
+                  if (initial) {
                     window.blazor_init = true;
                     putplugins();
-                    DotNet.invokeMethodAsync("JinEnergy", 'oninit', 'apk', myhost + '/settings.json');
+                    DotNet.invokeMethodAsync("JinEnergy", 'oninit', 'apk', host + '/settings.json');
                   } else {
                     console.log('BWA', 'not initial');
                   }
