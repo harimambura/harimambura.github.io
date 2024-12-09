@@ -47,7 +47,7 @@
               //console.log('BWA', 'load: ' + name);
               return framework + '/' + name;
             }
-          }).then(function() {
+          }).then(function() {debugger;
             console.log('BWA', 'load complete');
             var net = new Lampa.Reguest();
             window.httpReq = function(url, post, params) {
@@ -62,7 +62,7 @@
             var check = function check(good) {
               try {
                 DotNet.invokeMethodAsync("JinEnergy", 'initial').then(function(initial) {
-                  if (initial) {
+                  if (initial) {debugger;
                     window.blazor_init = true;
                     putplugins();
                     DotNet.invokeMethodAsync("JinEnergy", 'oninit', 'apk', myhost + '/settings.json');
